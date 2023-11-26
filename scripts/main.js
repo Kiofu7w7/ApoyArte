@@ -7,7 +7,6 @@ const contenedor = document.getElementById("divListado")
 //--------------------Datos crear-------------------//
 
 const botonCrear = document.getElementById("crearID");
-const idCrear = document.getElementById("inputID")
 const nombreCrear = document.getElementById("inputNombre")
 const precioCrear = document.getElementById("inputPrecio")
 const imagenCrear = document.getElementById("inputImagen")
