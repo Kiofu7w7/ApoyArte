@@ -15,7 +15,18 @@ export const listaProductos = async () =>{
     }
 }
 
+
 const ProductoUrl = "http://localhost:3000/productos"
+
+export const buscarProductos = async (id) =>{
+    try {
+        const datos = await get(ProductoUrl + "/" + id );
+        return datos
+    }
+    catch (error) {
+        console.log(error)
+    }
+}
 
 export const crearProductos = async (nombre, precio, imagen, descripcion, categorias) =>{
 

@@ -1,23 +1,53 @@
-import { listaProductos, crearProductos, borrarProducto, editarProductos } from "./modules/infoProducto.js";
+import { listaProductos, crearProductos, borrarProducto, editarProductos, buscarProductos } from "./modules/infoProducto.js";
 import { viewProductos } from "./modules/mostrarProductos.js";
 
-const botonCrear = document.getElementById("crearID");
-const botonBorrar = document.getElementById("borrarID");
-const botonEditar = document.getElementById("editarID");
-const idInput = document.getElementById("idInput");
+//--------------------Documento, divs-------------------//
 const contenedor = document.getElementById("divListado")
 
-var overlay = document.getElementById('popup1');
+//--------------------Datos crear-------------------//
+
+const botonCrear = document.getElementById("crearID");
+const idCrear = document.getElementById("inputID")
+const nombreCrear = document.getElementById("inputNombre")
+const precioCrear = document.getElementById("inputPrecio")
+const imagenCrear = document.getElementById("inputImagen")
+const descripcionCrear = document.getElementById("inputDescripcion")
+const categoriaCrear = document.getElementById("inputCategoria")
+
+//--------------------Datos editar-------------------//
+
+const botonEditar = document.getElementById("editarID")
+const idEditar = document.getElementById("inputIDE")
+const nombreEditar = document.getElementById("inputNombreE")
+const precioEditar = document.getElementById("inputPrecioE")
+const imagenEditar = document.getElementById("inputImagenE")
+const descripcionEditar = document.getElementById("inputDescripcionE")
+const categoriaEditar = document.getElementById("inputCategoriaE")
+
+
+//--------------------Overlays popus-------------------//
+var overlay1 = document.getElementById('popup1');
+var overlay2 = document.getElementById('popup2');
+
+
+//--------------------Popups-------------------//
 
 document.getElementById('openPopup').addEventListener('click', function () {
-    overlay.style.visibility = 'visible';
-    overlay.style.opacity = '1';
+    overlay1.style.visibility = 'visible';
+    overlay1.style.opacity = '1';
 });
 
-overlay.addEventListener('click', function (e) {
-    if (e.target == overlay) {
-        overlay.style.visibility = 'hidden';
-        overlay.style.opacity = '0';
+overlay1.addEventListener('click', function (e) {
+    if (e.target == overlay1) {
+        overlay1.style.visibility = 'hidden';
+        overlay1.style.opacity = '0';
+    }
+});
+
+overlay2.addEventListener('click', function (e) {
+    if (e.target == overlay2) {
+        overlay2.style.visibility = 'hidden';
+        overlay2.style.opacity = '0';
     }
 });
 
@@ -33,21 +63,38 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 //Parametros son nombre, precio, url imagen, descripcion, categoria (la id es automatica)
 
-botonCrear.addEventListener("click", async () => {
-    await crearProductos("prueba", 123456, "imagen.png", "descripcion prueba", "escultura");
+botonCrear.addEventListener('click', async () => {
+    await crearProductos(nombreCrear.value, parseInt(precioCrear.value), imagenCrear.value, descripcionCrear.value, categoriaCrear.value)
+})
+
+//--------------------Editar y eliminar productos-------------------//
+
+document.addEventListener("click", async ({ target }) => {
+    if (target.classList.contains("editar")) {
+        try {
+            const user = await buscarProductos(target.id);
+            const { categorias: cat, descripcion: desc, id: idp, imagen: url, nombreProducto: nombre, precio: prec} = user;
+            idEditar.value = idp;
+            nombreEditar.value = nombre;
+            precioEditar.value = prec;
+            imagenEditar.value = url;
+            descripcionEditar.value = desc;
+            categoriaEditar.value = cat;
+            overlay2.style.visibility = 'visible';
+            overlay2.style.opacity = '1';
+        } catch (err) {
+            console.log(err);
+        }
+    }
+    if (target.classList.contains("eliminar")) {
+        try {
+            await borrarProducto(target.id)
+        } catch (err) {
+            console.log(err);
+        }
+    }
 });
 
-//--------------------Borrar productos-------------------//
-
-//Parametros son id
-
-botonBorrar.addEventListener("click", async () => {
-    await borrarProducto(idInput.value)
-});
-
-//--------------------Editar productos-------------------//
-
-botonEditar.addEventListener("click", async () => {
-    await editarProductos("1", "cuadro nuevo", 654321, "imagenNueva.png", "descripcion nueva", "servicio");
-});
-
+botonEditar.addEventListener('click', async () => {
+    await editarProductos(parseInt(idEditar.value), nombreEditar.value, parseInt(precioEditar.value), imagenEditar.value, descripcionEditar.value, categoriaEditar.value)
+})
