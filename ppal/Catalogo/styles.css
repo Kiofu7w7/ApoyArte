@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body{
+    background: tomato;
+    font-size: 17px;
+}
+header{
+    background: url(./img/imagen_2023-11-23_194615708.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-height: 600px;
+}
+
+header .menu{
+    margin: 40px 0;
+    text-align: right;
+}
+header .menu a{
+    margin: 0 20px;
+    color: whitesmoke;
+    display: inline-block;
+    padding-bottom: 9px;
+    font-size: 1em;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+header .menu a:hover{
+    border-bottom: 1px solid black;
+    background: #ccc;
+    color: black;
+}
