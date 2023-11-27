@@ -39,6 +39,14 @@
       "imagen": "https://bogart.com.co/wp-content/uploads/2020/11/dsf02015215gt1try.jpg",
       "descripcion": "Cuadro tamaño XL para sala de mariposas",
       "categorias": "Cuadros, XL"
+    },
+    {
+      "id": "f4685976-009e-483d-8e00-370969abda2b",
+      "nombreProducto": "pruebaAxios2",
+      "precio": 666662,
+      "imagen": "url prueba2",
+      "descripcion": "desc prueba2",
+      "categoria": "categoria prueba2"
     }
   ]
 }
