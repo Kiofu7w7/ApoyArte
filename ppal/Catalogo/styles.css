@@ -1,36 +1,26 @@
-*{
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: "Open Sans";
 }
 
-body{
-    background: tomato;
-    font-size: 17px;
+body {
+  background: whitesmoke !important;
+  font-size: 10px;
 }
-header{
-    background: url(./img/imagen_2023-11-23_194615708.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-height: 600px;
+.log {
+  margin-left: auto;
 }
 
-header .menu{
-    margin: 40px 0;
-    text-align: right;
+form[role="search"] {
+  max-width: 300px;
+  width: 100%;
+  color: #2deb2d;
 }
-header .menu a{
-    margin: 0 20px;
-    color: whitesmoke;
-    display: inline-block;
-    padding-bottom: 9px;
-    font-size: 1em;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-}
-header .menu a:hover{
-    border-bottom: 1px solid black;
-    background: #ccc;
-    color: black;
-}
+
+.log a.nav-link:nth-child(3) {
+    color: #2deb2d !important;
+  }
