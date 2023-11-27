@@ -1,0 +1,44 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombreProducto": "cuadro nuevo",
+      "precio": 654321,
+      "imagen": "https://hips.hearstapps.com/hmg-prod/images/starry-night-over-the-rhone-by-vincent-willem-van-gogh-news-photo-1658241462.jpg",
+      "descripcion": "descripcion nueva",
+      "categorias": "servicio"
+    },
+    {
+      "id": 3,
+      "nombreProducto": "Cuadro vangoj 3",
+      "precio": 60000,
+      "imagen": "https://hips.hearstapps.com/hmg-prod/images/oil-on-canvas-rijksmuseum-kroller-muller-otterlo-the-news-photo-1658241139.jpg",
+      "descripcion": "descripcion 3",
+      "categorias": "cuadros"
+    },
+    {
+      "id": 4,
+      "nombreProducto": "Cuadro vangoj 4",
+      "precio": 80000,
+      "imagen": "https://hips.hearstapps.com/hmg-prod/images/van-gogh-s-bedroom-in-arles-1889-1646929996.jpg",
+      "descripcion": "descripcion 4",
+      "categorias": "cuadros"
+    },
+    {
+      "id": "1e44b323-4b2a-4580-b3c5-5e16fb31a97c",
+      "nombreProducto": "prueba",
+      "precio": 123456,
+      "imagen": "https://hips.hearstapps.com/hmg-prod/images/van-gogh-s-bedroom-in-arles-1889-1646929996.jpg",
+      "descripcion": "descripcion prueba",
+      "categorias": "escultura"
+    },
+    {
+      "id": "cd6cb259-dd90-4354-907e-01c6ea1525ee",
+      "nombreProducto": "Cuadro XL mariposas",
+      "precio": 235400,
+      "imagen": "https://bogart.com.co/wp-content/uploads/2020/11/dsf02015215gt1try.jpg",
+      "descripcion": "Cuadro tamaño XL para sala de mariposas",
+      "categorias": "Cuadros, XL"
+    }
+  ]
+}
