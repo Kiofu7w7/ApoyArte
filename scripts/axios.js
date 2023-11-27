@@ -62,3 +62,5 @@ const editarProducto = async (id,nombreB, precioB, imagenB, descB, catB) => {
         console.log(error)
     }
 }
+
+obtenerProductos()
