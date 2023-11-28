@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pruebas api</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+<h1>ADMINISTRAR PRODUCTOS</h1>
+    <button id="openPopup">Crear producto</button>
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h1>Datos del producto</h1>
+            <h2>ID</h2>
+            <input type="text" id="inputID" disabled>
+            <h2>Nombre</h2>
+            <input type="text" id="inputNombre">
+            <h2>Precio</h2>
+            <input type="text" id="inputPrecio">
+            <h2>Url imagen</h2>
+            <input type="text" id="inputImagen">
+            <h2>Descripcion</h2>
+            <input type="text" id="inputDescripcion">
+            <h2>Categoria</h2>
+            <input type="text" id="inputCategoria">
+            <button id="crearID">Crear</button>
+        </div>
+    </div>
+
+    <div id="popup2" class="overlay">
+        <div class="popup">
+            <h1>Datos del producto</h1>
+            <h2>ID</h2>
+            <input type="text" id="inputIDE" disabled>
+            <h2>Nombre</h2>
+            <input type="text" id="inputNombreE">
+            <h2>Precio</h2>
+            <input type="text" id="inputPrecioE">
+            <h2>Url imagen</h2>
+            <input type="text" id="inputImagenE">
+            <h2>Descripcion</h2>
+            <input type="text" id="inputDescripcionE">
+            <h2>Categoria</h2>
+            <input type="text" id="inputCategoriaE">
+            <button id="editarID">Editar</button>
+        </div>
+    </div>
+
+    <div id="divListado">
+        
+    </div>
+
+
+</body>
+<script type="module" src="../../../scripts/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</html>

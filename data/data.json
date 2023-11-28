@@ -1,12 +1,12 @@
 {
   "productos": [
     {
-      "id": 1,
-      "nombreProducto": "cuadro nuevo",
-      "precio": 654321,
-      "imagen": "https://hips.hearstapps.com/hmg-prod/images/starry-night-over-the-rhone-by-vincent-willem-van-gogh-news-photo-1658241462.jpg",
-      "descripcion": "descripcion nueva",
-      "categorias": "servicio"
+      "nombreProducto": "prueba",
+      "precio": 123456,
+      "imagen": "https://hips.hearstapps.com/hmg-prod/images/van-gogh-s-bedroom-in-arles-1889-1646929996.jpg",
+      "descripcion": "descripcion prueba",
+      "categorias": "escultura",
+      "id": 1
     },
     {
       "id": 3,
@@ -17,12 +17,12 @@
       "categorias": "cuadros"
     },
     {
-      "id": 4,
       "nombreProducto": "Cuadro vangoj 4",
       "precio": 80000,
       "imagen": "https://hips.hearstapps.com/hmg-prod/images/van-gogh-s-bedroom-in-arles-1889-1646929996.jpg",
       "descripcion": "descripcion 4",
-      "categorias": "cuadros"
+      "categorias": "ya si funciona",
+      "id": 4
     },
     {
       "id": "1e44b323-4b2a-4580-b3c5-5e16fb31a97c",
@@ -43,46 +43,46 @@
   ],
   "usuarios": [
     {
-      "id" : "1",
-      "nombreUsuario" : "Kiofu7w7",
-      "email" : "plaga500@hotmail.com",
+      "id": "1",
+      "nombreUsuario": "Kiofu7w7",
+      "email": "plaga500@hotmail.com",
       "contraseña": "patata1",
-      "primerNombre" : "Santiago",
-      "segundoNombre" : "Buitrago",
-      "numeroContacto" : "3006700461",
-      "direccion" : "cra49 #44-47",
-      "fechaNacimiento" : "2003-02-02",
-      "tipoCuenta" : "cliente",
-      "carroActual" : true,
-      "idCarrito" : "129431289"
+      "primerNombre": "Santiago",
+      "segundoNombre": "Buitrago",
+      "numeroContacto": "3006700461",
+      "direccion": "cra49 #44-47",
+      "fechaNacimiento": "2003-02-02",
+      "tipoCuenta": "cliente",
+      "carroActual": true,
+      "idCarrito": "129431289"
     },
     {
-      "id" : "2",
-      "nombreUsuario" : "mendofeo",
-      "email" : "mendofeo@hotmail.com",
+      "id": "2",
+      "nombreUsuario": "mendofeo",
+      "email": "mendofeo@hotmail.com",
       "contraseña": "feo123",
-      "primerNombre" : "Mendoza",
-      "segundoNombre" : "Mazo",
-      "numeroContacto" : "300123361",
-      "direccion" : "av 32 #42-41",
-      "fechaNacimiento" : "2002-4-17",
-      "tipoCuenta" : "vendedor",
-      "carroActual" : false,
-      "idCarrito" : ""
+      "primerNombre": "Mendoza",
+      "segundoNombre": "Mazo",
+      "numeroContacto": "300123361",
+      "direccion": "av 32 #42-41",
+      "fechaNacimiento": "2002-4-17",
+      "tipoCuenta": "vendedor",
+      "carroActual": false,
+      "idCarrito": ""
     },
     {
-      "id" : "3",
-      "nombreUsuario" : "sebastiangey",
-      "email" : "sebastiangey@hotmail.com",
+      "id": "3",
+      "nombreUsuario": "sebastiangey",
+      "email": "sebastiangey@hotmail.com",
       "contraseña": "sebastiangey123",
-      "primerNombre" : "Sebastian",
-      "segundoNombre" : "Montaño",
-      "numeroContacto" : "30066661",
-      "direccion" : "calle 11 #12-41",
-      "fechaNacimiento" : "2001-1-01",
-      "tipoCuenta" : "administrador",
-      "carroActual" : false,
-      "idCarrito" : ""
+      "primerNombre": "Sebastian",
+      "segundoNombre": "Montaño",
+      "numeroContacto": "30066661",
+      "direccion": "calle 11 #12-41",
+      "fechaNacimiento": "2001-1-01",
+      "tipoCuenta": "administrador",
+      "carroActual": false,
+      "idCarrito": ""
     }
   ]
 }

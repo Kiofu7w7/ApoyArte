@@ -1,7 +1,7 @@
 const url = 'http://localhost:3000/productos'
 
 //--------------------Obtener productos-------------------//
-const obtenerProductos = async () => {
+export const obtenerProductos = async () => {
     try {
         const response = await axios.get(url)
         return response
@@ -11,7 +11,7 @@ const obtenerProductos = async () => {
 }
 
 //--------------------Buscar producto-------------------//
-const buscarProducto = async (idB) => {
+export const buscarProducto = async (idB) => {
     try {
         const response = await axios.get(url + "/" + idB)
         return response
@@ -21,7 +21,7 @@ const buscarProducto = async (idB) => {
 }
 
 //--------------------Crear productos-------------------//
-const crearProducto = async (nombreB, precioB, imagenB, descB, catB) => {
+export const crearProducto = async (nombreB, precioB, imagenB, descB, catB) => {
     try {
         await axios.post(url, {
             id: crypto.randomUUID(),
@@ -29,7 +29,7 @@ const crearProducto = async (nombreB, precioB, imagenB, descB, catB) => {
             precio: precioB,
             imagen: imagenB,
             descripcion: descB,
-            categoria: catB
+            categorias: catB
         })
     } catch (error) {
         console.log(error)
@@ -38,7 +38,7 @@ const crearProducto = async (nombreB, precioB, imagenB, descB, catB) => {
 
 //--------------------Borrar producto-------------------//
 
-const borrarProducto = async (id) => {
+export const borrarProducto = async (id) => {
     try {
         await axios.delete(url+"/"+id)
     } catch (error) {
@@ -48,15 +48,14 @@ const borrarProducto = async (id) => {
 
 //--------------------Editar producto-------------------//
 
-const editarProducto = async (id,nombreB, precioB, imagenB, descB, catB) => {
+export const editarProducto = async (id,nombreB, precioB, imagenB, descB, catB) => {
     try {
         await axios.put(url+"/"+id,{
-            id: id,
             nombreProducto: nombreB,
             precio: precioB,
             imagen: imagenB,
             descripcion: descB,
-            categoria: catB
+            categorias: catB
         })
     } catch (error) {
         console.log(error)
