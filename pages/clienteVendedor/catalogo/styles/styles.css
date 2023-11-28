@@ -16,6 +16,9 @@ body {
     height: 100vh;
 }
 
+.contenedor{
+    overflow: visible;
+}
 .arte{
     background: #f2f2f2;
     padding: 60px 0;
