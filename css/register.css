@@ -1,0 +1,115 @@
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .ContForm{
+    background-color: rgb(31, 189, 31);
+  }
+  .ContTodForm{
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(31, 189, 31, 0.493);
+  }
+
+  .FormReg{
+    border: solid;
+    border-color: black;
+    padding: 0px;
+    margin: 20px;
+    background-color: rgba(31, 189, 31, 0);
+  }
+  
+  .imgReg{
+    height: 530px;
+    width: 530px;
+    object-fit: contain;
+    margin-right: 20px;
+  }
+
+  .Formh1{
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  .DirEst{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+  }
+  
+  .Buttons{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+  }
+  
+  .btnGuardar{
+    width: auto;
+    height: 100%;
+    background-color: rgb(31, 189, 31);
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-top: 27px;
+    border: solid;
+    border-color: rgb(31, 189, 31);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .btnCancelar{
+    width: auto;
+    height: 100%;
+    background-color: none;
+    color: rgb(31, 189, 31);
+    padding: 10px 20px;
+    margin-left: 5px;
+    margin-top: 27px;
+    border: solid;
+    border-color: rgb(31, 189, 31);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  
+  
