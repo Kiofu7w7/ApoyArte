@@ -1,4 +1,4 @@
-import { obtenerProductos, buscarProducto, crearProducto, borrarProducto, editarProducto  } from "./axiosFunc/axiosProducto.js"
+import { obtenerProductos, buscarProducto, crearProducto, borrarProducto, editarProducto  } from "../../../../scripts/axiosFunc/axiosProducto.js"
 import { viewProductos } from "../../../../scripts/modules/mostrarProductos.js";
 
 //--------------------Documento, divs-------------------//
