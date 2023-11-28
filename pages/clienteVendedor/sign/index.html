@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -11,5 +11,67 @@
         <object class="navbarObj" data="/pages/navBarFotter/navbar.html" type="text/html">
         </object>
     </head>
+    <div class="DirEst">
+        <div>
+            <img class="imgReg" src="https://res.cloudinary.com/dtmapxnao/image/upload/v1701186779/4058697_2121601_wsb50h.jpg">
+        </div>
+        <div class="ContTodForm">
+            <form action="procesar.php" method="post" class="FormReg">
+                <div class="ContForm">
+                <h1 class="Formh1">FORM</h1>
+                </div>
+            
+                <div class="DirEst">
+                    <div style="margin-right: 15%;">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Tu apellido">
+                    </div>
+                </div>
+            
+                <div class="DirEst">
+                    <div style="margin-right: 15%;">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" name="email" id="email" placeholder="Tu correo electrónico">
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="number" name="telefono" id="telefono" placeholder="Tu teléfono">
+                    </div>
+                </div>
+            
+                <div class="DirEst">
+                    <div style="margin-right: 20%;">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" name="direccion" id="direccion" placeholder="Tu dirección">
+                    </div>
+                    <div style="margin-left: 15%;">
+                        <label for="estado">Estado:</label>
+                        <select name="estado" id="estado">
+                            <option value="Cliente">Cliente</option>
+                            <option value="Vendedor">Vendedor</option>
+                        </select>
+                    </div>
+                </div>
+            
+                
+                <div class="DirEst" style="margin-bottom: 20px;">
+                    <div style="margin-right: 5%;">
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" name="contrasena" id="contrasena" placeholder="Tu contraseña">
+                    </div>
+                    <button type="submit" class="btnGuardar">Guardar</button>
+                    <button type="reset" class="btnCancelar">Cancelar</button>
+                </div>
+              </form>
+        </div>
+    </div>
+    <footer>
+        <object class="footerObj" data="/pages/navBarFotter/fotter.html" type="text/html">
+        </object>
+    </footer>
 </body>
 </html>
