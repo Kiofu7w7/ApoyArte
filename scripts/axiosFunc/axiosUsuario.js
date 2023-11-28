@@ -11,7 +11,7 @@ const obtenerUsuarios = async () => {
 }
 
 //--------------------Buscar Usuario-------------------//
-const buscarProducto = async (idB) => {
+const buscarUsuario = async (idB) => {
     try {
         const response = await axios.get(url + "/" + idB)
         return response
@@ -22,7 +22,7 @@ const buscarProducto = async (idB) => {
 
 
 //--------------------Crear usuario-------------------//
-const crearProducto = async (usuarioU, emailU, contraseñaU, nombre1U, nombre2U, contactoU, direccionU, fechaNacimientoU, tipoCuentaU) => {
+const crearUsuario = async (usuarioU, emailU, contraseñaU, nombre1U, nombre2U, apelli1, apelli2, contactoU, direccionU, fechaNacimientoU, tipoCuentaU) => {
     try {
         await axios.post(url, {
             id: crypto.randomUUID(),
@@ -31,6 +31,8 @@ const crearProducto = async (usuarioU, emailU, contraseñaU, nombre1U, nombre2U,
             contraseña: contraseñaU,
             primerNombre: nombre1U,
             segundoNombre: nombre2U,
+            primerApellido : apelli1,
+            segundoApellido : apelli2,
             numeroContacto: contactoU,
             direccion: direccionU,
             fechaNacimiento: fechaNacimientoU,
@@ -43,7 +45,7 @@ const crearProducto = async (usuarioU, emailU, contraseñaU, nombre1U, nombre2U,
 
 //--------------------Borrar producto-------------------//
 
-const borrarProducto = async (idU) => {
+const borrarUsuario = async (idU) => {
     try {
         await axios.delete(url+"/"+idU)
     } catch (error) {
@@ -53,7 +55,7 @@ const borrarProducto = async (idU) => {
 
 //--------------------Editar producto-------------------//
 
-const editarProducto = async (idU, usuarioU, emailU, contraseñaU, nombre1U, nombre2U, contactoU, direccionU, fechaNacimientoU, tipoCuentaU, carroActualU, idCarritoU) => {
+const editarUsuario = async (idU, usuarioU, emailU, contraseñaU, nombre1U, nombre2U, apelli1, apelli2, contactoU, direccionU, fechaNacimientoU, tipoCuentaU, carroActualU, idCarritoU) => {
     try {
         await axios.put(url+"/"+idU,{
             id: idU,
@@ -62,6 +64,8 @@ const editarProducto = async (idU, usuarioU, emailU, contraseñaU, nombre1U, nom
             contraseña: contraseñaU,
             primerNombre: nombre1U,
             segundoNombre: nombre2U,
+            primerApellido : apelli1,
+            segundoApellido : apelli2,
             numeroContacto: contactoU,
             direccion: direccionU,
             fechaNacimiento: fechaNacimientoU,
