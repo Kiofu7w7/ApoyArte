@@ -2,6 +2,8 @@ body {
     font-family: sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    background-image: url(https://res.cloudinary.com/dtmapxnao/image/upload/v1701191550/fondo-acuarela-pintada-mano-forma-cielo-nubes_zw33rj.jpg);
+    background-size: cover;
   }
   
   .ContForm{
