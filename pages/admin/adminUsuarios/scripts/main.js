@@ -1,70 +1,52 @@
 import { obtenerUsuarios, buscarUsuario, crearUsuario, borrarUsuario, editarUsuario  } from "../../../../scripts/axiosFunc/axiosUsuario.js"
-import { viewProductos } from "../../../../scripts/modules/mostrarUsuarios.js";
+import { viewUsuarios } from "../../../../scripts/modules/mostrarUsuarios.js"
 
 //--------------------Documento, divs-------------------//
 const contenedor = document.getElementById("divListado")
+const botonCrear = document.getElementById("btnCrear")
+const botonEditar = document.getElementById("btnConfirmEdit")
+const botonConfirmarCrear = document.getElementById("btnConfirmarCrear")
 
-//--------------------Datos crear-------------------//
+//--------------------Datos-------------------//
 
-const botonCrear = document.getElementById("crearID");
-const nombreCrear = document.getElementById("inputNombre")
-const precioCrear = document.getElementById("inputPrecio")
-const imagenCrear = document.getElementById("inputImagen")
-const descripcionCrear = document.getElementById("inputDescripcion")
-const categoriaCrear = document.getElementById("inputCategoria")
-
-//--------------------Datos editar-------------------//
-
-const botonEditar = document.getElementById("editarID")
-const idEditar = document.getElementById("inputIDE")
-const nombreEditar = document.getElementById("inputNombreE")
-const precioEditar = document.getElementById("inputPrecioE")
-const imagenEditar = document.getElementById("inputImagenE")
-const descripcionEditar = document.getElementById("inputDescripcionE")
-const categoriaEditar = document.getElementById("inputCategoriaE")
-
-
-//--------------------Overlays popus-------------------//
-var overlay1 = document.getElementById('popup1');
-var overlay2 = document.getElementById('popup2');
-
-
-//--------------------Popups-------------------//
-
-document.getElementById('openPopup').addEventListener('click', function () {
-    overlay1.style.visibility = 'visible';
-    overlay1.style.opacity = '1';
-});
-
-overlay1.addEventListener('click', function (e) {
-    if (e.target == overlay1) {
-        overlay1.style.visibility = 'hidden';
-        overlay1.style.opacity = '0';
-    }
-});
-
-overlay2.addEventListener('click', function (e) {
-    if (e.target == overlay2) {
-        overlay2.style.visibility = 'hidden';
-        overlay2.style.opacity = '0';
-    }
-});
+const primerNombre = document.getElementById('primerNombreHtml');
+const segundoNombre = document.getElementById('segundoNombreHtml');
+const primerApellido = document.getElementById('primerApellidoHtml');
+const segundoApellido = document.getElementById('segundoApellidoHtml');
+const tipoCuenta = document.getElementById('tipoCuentaHtml');
+const nombreUsuario = document.getElementById('nombreUsuarioHtml');
+const email = document.getElementById('emailHtml');
+const numeroContacto = document.getElementById('numeroContactoHtml');
+const direccion = document.getElementById('direccionHtml');
+const contraseña = document.getElementById('contraseñaHtml');
+const fechaNacimiento = document.getElementById('fechaNacimientoHtml');
+const idHTML = document.getElementById('idHtml');
+const carroActual = document.getElementById('carroActualHtml');
+const idCarrito = document.getElementById('idCarritoHtml');
 
 //--------------------Obtener todos los productos-------------------//
 //Sin parametros
 
 document.addEventListener("DOMContentLoaded", async function () {
     const datos = await obtenerUsuarios();
-    console.log(datos.data)
+    viewUsuarios(datos.data, contenedor)
     //viewProductos(datos.data, contenedor)
 })
+
+
+//--------------------Crear productos-------------------//
+
+botonCrear.addEventListener('click', function(){
+    botonCrear.innerText
+})
+
 
 //--------------------Crear productos-------------------//
 
 //Parametros son nombre, precio, url imagen, descripcion, categoria (la id es automatica)
 
-botonCrear.addEventListener('click', async () => {
-    await crearUsuario(nombreCrear.value, parseInt(precioCrear.value), imagenCrear.value, descripcionCrear.value, categoriaCrear.value)
+botonConfirmarCrear.addEventListener('click', async () => {
+    await crearUsuario(nombreUsuario.value, email.value, contraseña.value, primerNombre.value, segundoNombre.value, primerApellido.value, segundoApellido.value, numeroContacto.value, direccion.value, fechaNacimiento.value, tipoCuenta.value)
 })
 
 //--------------------Editar y eliminar productos-------------------//
@@ -73,15 +55,28 @@ document.addEventListener("click", async ({ target }) => {
     if (target.classList.contains("editar")) {
         try {
             const user = await buscarUsuario(target.id);
-            const { categorias: cat, descripcion: desc, id: idp, imagen: url, nombreProducto: nombre, precio: prec} = user.data;
-            idEditar.value = idp;
-            nombreEditar.value = nombre;
-            precioEditar.value = prec;
-            imagenEditar.value = url;
-            descripcionEditar.value = desc;
-            categoriaEditar.value = cat;
-            overlay2.style.visibility = 'visible';
-            overlay2.style.opacity = '1';
+            console.log(user)
+            const { carroActual: carroActualE, contraseña:contraseñaE, direccion:direccionE, email:emailE, fechaNacimiento:fechaNacimientoE, id:idE, idCarrito:idCarritoE, nombreUsuario:nombreUsuarioE, numeroContacto: numeroContactoE, primerApellido:primerApellidoE, primerNombre:primerNombreE, segundoApellido:segundoApellidoE, segundoNombre:segundoNombreE, tipoCuenta:tipoCuentaE} = user.data;
+            nombreUsuario.value = nombreUsuarioE;
+            segundoNombre.value = segundoNombreE;
+            primerApellido.value = primerApellidoE;
+            segundoApellido.value = segundoApellidoE;
+            tipoCuenta.value = tipoCuentaE;
+            primerNombre.value = primerNombreE;
+            primerApellido.value = primerApellidoE;
+            numeroContacto.value = numeroContactoE;
+            email.value = emailE;
+            carroActual.value = carroActualE;
+            contraseña.value = contraseñaE;
+            direccion.value = direccionE;
+            fechaNacimiento.value = fechaNacimientoE;
+            idHTML.value = idE;
+            idCarrito.value = idCarritoE;
+            idHTML.disabled = false;
+            carroActual.disabled = false;
+            idCarrito.disabled = false;
+            botonEditar.style.display = 'block'
+            botonConfirmarCrear.style.display = 'none'
         } catch (err) {
             console.log(err);
         }
@@ -96,5 +91,5 @@ document.addEventListener("click", async ({ target }) => {
 });
 
 botonEditar.addEventListener('click', async () => {
-    await editarUsuario(idEditar.value, nombreEditar.value, parseInt(precioEditar.value), imagenEditar.value, descripcionEditar.value, categoriaEditar.value)
+    await editarUsuario(idHTML.value ,nombreUsuario.value, email.value, contraseña.value, primerNombre.value, segundoNombre.value, primerApellido.value, segundoApellido.value, numeroContacto.value, direccion.value, fechaNacimiento.value, tipoCuenta.value, carroActual.value, idCarrito.value)
 })

@@ -1,7 +1,7 @@
 const url = 'http://localhost:3000/usuarios'
 
 //--------------------Obtener usuarios-------------------//
-const obtenerUsuarios = async () => {
+export const obtenerUsuarios = async () => {
     try {
         const response = await axios.get(url)
         return response
@@ -11,7 +11,7 @@ const obtenerUsuarios = async () => {
 }
 
 //--------------------Buscar Usuario-------------------//
-const buscarUsuario = async (idB) => {
+export const buscarUsuario = async (idB) => {
     try {
         const response = await axios.get(url + "/" + idB)
         return response
@@ -22,7 +22,7 @@ const buscarUsuario = async (idB) => {
 
 
 //--------------------Crear usuario-------------------//
-const crearUsuario = async (usuarioU, emailU, contraseñaU, nombre1U, nombre2U, apelli1, apelli2, contactoU, direccionU, fechaNacimientoU, tipoCuentaU) => {
+export const crearUsuario = async (usuarioU, emailU, contraseñaU, nombre1U, nombre2U, apelli1, apelli2, contactoU, direccionU, fechaNacimientoU, tipoCuentaU) => {
     try {
         await axios.post(url, {
             id: crypto.randomUUID(),
@@ -36,7 +36,9 @@ const crearUsuario = async (usuarioU, emailU, contraseñaU, nombre1U, nombre2U, 
             numeroContacto: contactoU,
             direccion: direccionU,
             fechaNacimiento: fechaNacimientoU,
-            tipoCuenta: tipoCuentaU
+            tipoCuenta: tipoCuentaU,
+            carroActual: false,
+            idCarrito: ""
         })
     } catch (error) {
         console.log(error)
@@ -45,7 +47,7 @@ const crearUsuario = async (usuarioU, emailU, contraseñaU, nombre1U, nombre2U, 
 
 //--------------------Borrar producto-------------------//
 
-const borrarUsuario = async (idU) => {
+export const borrarUsuario = async (idU) => {
     try {
         await axios.delete(url+"/"+idU)
     } catch (error) {
@@ -55,7 +57,7 @@ const borrarUsuario = async (idU) => {
 
 //--------------------Editar producto-------------------//
 
-const editarUsuario = async (idU, usuarioU, emailU, contraseñaU, nombre1U, nombre2U, apelli1, apelli2, contactoU, direccionU, fechaNacimientoU, tipoCuentaU, carroActualU, idCarritoU) => {
+export const editarUsuario = async (idU, usuarioU, emailU, contraseñaU, nombre1U, nombre2U, apelli1, apelli2, contactoU, direccionU, fechaNacimientoU, tipoCuentaU, carroActualU, idCarritoU) => {
     try {
         await axios.put(url+"/"+idU,{
             id: idU,

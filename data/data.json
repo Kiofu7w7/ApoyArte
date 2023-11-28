@@ -89,6 +89,22 @@
       "tipoCuenta": "administrador",
       "carroActual": false,
       "idCarrito": ""
+    },
+    {
+      "id": "c7b4c875-fa8c-4455-b4f3-850deb8db2fb",
+      "nombreUsuario": "usuariosUsuAA",
+      "email": "emai@gmail.comAA",
+      "contraseña": "20343333",
+      "primerNombre": "nombre1UsuEDITADO",
+      "segundoNombre": "nombre2UsuAA",
+      "primerApellido": "ape1UsuAA",
+      "segundoApellido": "ape2UsuAAA",
+      "numeroContacto": "51111",
+      "direccion": "carrera 32 43- 32AA",
+      "fechaNacimiento": "2023-11-05",
+      "tipoCuenta": "vendedor",
+      "carroActual": "true",
+      "idCarrito": "123123"
     }
   ]
 }

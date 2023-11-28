@@ -9,49 +9,43 @@
 </head>
 
 <body>
-<h1>ADMINISTRAR PRODUCTOS</h1>
-    <button id="openPopup">Crear producto</button>
+    <h1>ADMINISTRAR PRODUCTOS</h1>
 
-    <div id="popup1" class="overlay">
-        <div class="popup">
-            <h1>Datos del producto</h1>
-            <h2>ID</h2>
-            <input type="text" id="inputID" disabled>
-            <h2>Nombre</h2>
-            <input type="text" id="inputNombre">
-            <h2>Precio</h2>
-            <input type="text" id="inputPrecio">
-            <h2>Url imagen</h2>
-            <input type="text" id="inputImagen">
-            <h2>Descripcion</h2>
-            <input type="text" id="inputDescripcion">
-            <h2>Categoria</h2>
-            <input type="text" id="inputCategoria">
-            <button id="crearID">Crear</button>
-        </div>
-    </div>
+    <button id="btnCrear">Creacion de usuarios</button>
 
-    <div id="popup2" class="overlay">
-        <div class="popup">
-            <h1>Datos del producto</h1>
-            <h2>ID</h2>
-            <input type="text" id="inputIDE" disabled>
-            <h2>Nombre</h2>
-            <input type="text" id="inputNombreE">
-            <h2>Precio</h2>
-            <input type="text" id="inputPrecioE">
-            <h2>Url imagen</h2>
-            <input type="text" id="inputImagenE">
-            <h2>Descripcion</h2>
-            <input type="text" id="inputDescripcionE">
-            <h2>Categoria</h2>
-            <input type="text" id="inputCategoriaE">
-            <button id="editarID">Editar</button>
-        </div>
+    <div>
+        <fieldset>
+            <legend>Creación de usuarios</legend>
+            <div>
+                <h2><input type="text" id="primerNombreHtml" name="primerNombre" placeholder="Primer Nombre"></h2>
+                <h2><input type="text" id="segundoNombreHtml" name="segundoNombre" placeholder="Segundo Nombre"></h2>
+                <h3><input type="text" id="primerApellidoHtml" name="primerApellido" placeholder="Primer Apellido"></h3>
+                <h3><input type="text" id="segundoApellidoHtml" name="segundoApellido" placeholder="Segundo Apellido"></h3>
+                <h3>Tipo de cuenta: 
+                    <select id="tipoCuentaHtml" name="tipoCuenta">
+                        <option value="cliente">Cliente</option>
+                        <option value="vendedor">Vendedor</option>
+                        <option value="administrador">Administrador</option>
+                    </select>
+                </h3>                
+                <h3>Usuario: <input type="text" id="nombreUsuarioHtml" name="nombreUsuario" placeholder="Nombre de Usuario"></h3>
+                <h3>Email: <input type="email" id="emailHtml" name="email" placeholder="Email"></h3>
+                <h3>Contacto: <input type="tel" id="numeroContactoHtml" name="numeroContacto" placeholder="Número de Contacto"></h3>
+                <p>Dirección: <input type="text" id="direccionHtml" name="direccion" placeholder="Dirección"></p>
+                <p>Contraseña: <input type="password" id="contraseñaHtml" name="contraseña" placeholder="Contraseña"></p>
+                <p>Fecha de nacimiento: <input type="date" id="fechaNacimientoHtml" name="fechaNacimiento"></p>
+                <p>ID: <input type="text" id="idHtml" name="id" placeholder="ID" disabled></p>
+                <p>Carrito actual: <input type="text" id="carroActualHtml" name="carroActual" placeholder="Carrito Actual" disabled></p>
+                <p>ID carrito: <input type="text" id="idCarritoHtml" name="idCarrito" placeholder="ID Carrito" disabled></p>
+                <button id="btnConfirmarCrear"> Confirmar creacion</button>
+                <button id="btnConfirmEdit" style="display: none;">Confirmar edicion</button>
+            </div>
+        </fieldset>
+        
     </div>
 
     <div id="divListado">
-        
+
     </div>
 
 
