@@ -39,6 +39,14 @@
       "imagen": "https://bogart.com.co/wp-content/uploads/2020/11/dsf02015215gt1try.jpg",
       "descripcion": "Cuadro tamaño XL para sala de mariposas",
       "categorias": "Cuadros, XL"
+    },
+    {
+      "nombreProducto": "Cadritos",
+      "precio": 2560000,
+      "imagen": "https://res.cloudinary.com/dyepe4ih7/image/upload/v1701195574/ApoyArte/cyoojdq9hgmlctautbw9.jpg",
+      "descripcion": "pixeles",
+      "categorias": "nueva",
+      "id": 64
     }
   ],
   "usuarios": [
