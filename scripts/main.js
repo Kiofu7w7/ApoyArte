@@ -1,4 +1,5 @@
-import { listaProductos, crearProductos, borrarProducto, editarProductos, buscarProductos } from "./modules/infoProducto.js";
+//import { listaProductos, crearProductos, borrarProducto, editarProductos, buscarProductos } from "./modules/infoProducto.js";
+import { obtenerProductos, buscarProducto, crearProducto, borrarProducto, editarProducto  } from "./axiosFunc/axiosProducto.js"
 import { viewProductos } from "./modules/mostrarProductos.js";
 
 //--------------------Documento, divs-------------------//
@@ -54,8 +55,8 @@ overlay2.addEventListener('click', function (e) {
 //Sin parametros
 
 document.addEventListener("DOMContentLoaded", async function () {
-    const datos = await listaProductos();
-    viewProductos(datos, contenedor)
+    const datos = await obtenerProductos();
+    viewProductos(datos.data, contenedor)
 })
 
 //--------------------Crear productos-------------------//
@@ -63,7 +64,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 //Parametros son nombre, precio, url imagen, descripcion, categoria (la id es automatica)
 
 botonCrear.addEventListener('click', async () => {
-    await crearProductos(nombreCrear.value, parseInt(precioCrear.value), imagenCrear.value, descripcionCrear.value, categoriaCrear.value)
+    await crearProducto(nombreCrear.value, parseInt(precioCrear.value), imagenCrear.value, descripcionCrear.value, categoriaCrear.value)
 })
 
 //--------------------Editar y eliminar productos-------------------//
@@ -71,8 +72,8 @@ botonCrear.addEventListener('click', async () => {
 document.addEventListener("click", async ({ target }) => {
     if (target.classList.contains("editar")) {
         try {
-            const user = await buscarProductos(target.id);
-            const { categorias: cat, descripcion: desc, id: idp, imagen: url, nombreProducto: nombre, precio: prec} = user;
+            const user = await buscarProducto(target.id);
+            const { categorias: cat, descripcion: desc, id: idp, imagen: url, nombreProducto: nombre, precio: prec} = user.data;
             idEditar.value = idp;
             nombreEditar.value = nombre;
             precioEditar.value = prec;
@@ -95,5 +96,5 @@ document.addEventListener("click", async ({ target }) => {
 });
 
 botonEditar.addEventListener('click', async () => {
-    await editarProductos(parseInt(idEditar.value), nombreEditar.value, parseInt(precioEditar.value), imagenEditar.value, descripcionEditar.value, categoriaEditar.value)
+    await editarProducto(idEditar.value, nombreEditar.value, parseInt(precioEditar.value), imagenEditar.value, descripcionEditar.value, categoriaEditar.value)
 })
