@@ -9,12 +9,12 @@
       "id": 1
     },
     {
-      "id": 3,
       "nombreProducto": "Cuadro vangoj 3",
       "precio": 60000,
       "imagen": "https://hips.hearstapps.com/hmg-prod/images/oil-on-canvas-rijksmuseum-kroller-muller-otterlo-the-news-photo-1658241139.jpg",
       "descripcion": "descripcion 3",
-      "categorias": "cuadros"
+      "categorias": "cuadros",
+      "id": 3
     },
     {
       "nombreProducto": "Cuadro vangoj 4",
@@ -49,6 +49,8 @@
       "contraseña": "patata1",
       "primerNombre": "Santiago",
       "segundoNombre": "Buitrago",
+      "primerApellido": "giraldo",
+      "segundoApellido": "",
       "numeroContacto": "3006700461",
       "direccion": "cra49 #44-47",
       "fechaNacimiento": "2003-02-02",
@@ -63,6 +65,8 @@
       "contraseña": "feo123",
       "primerNombre": "Mendoza",
       "segundoNombre": "Mazo",
+      "primerApellido": "Camilo",
+      "segundoApellido": "",
       "numeroContacto": "300123361",
       "direccion": "av 32 #42-41",
       "fechaNacimiento": "2002-4-17",
@@ -77,6 +81,8 @@
       "contraseña": "sebastiangey123",
       "primerNombre": "Sebastian",
       "segundoNombre": "Montaño",
+      "primerApellido": "Juan",
+      "segundoApellido": "Perez",
       "numeroContacto": "30066661",
       "direccion": "calle 11 #12-41",
       "fechaNacimiento": "2001-1-01",
