@@ -33,6 +33,7 @@ body {
     text-align: left;
     font-size: 20px;
     padding: 10px;
+    padding-left: 20px;
   }
 
   h1 {
@@ -50,16 +51,11 @@ body {
     display: flex;
     justify-content: center;
     padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
     align-items: center;
   }
   
-  .Buttons{
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    align-items: center;
-  }
-
   label {
     display: block;
     margin-bottom: 5px;
