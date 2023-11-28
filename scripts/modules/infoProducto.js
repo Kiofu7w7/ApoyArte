@@ -1,4 +1,4 @@
-import { get } from "./API/get.js";
+/*import { get } from "./API/get.js";
 import { POST } from "./API/post.js";
 import { DELETE } from "./API/delete.js";
 import { EDIT } from "./API/patch.js";
@@ -73,4 +73,4 @@ export const editarProductos = async (idE,nombre, precio, imagen, descripcion, c
     } catch (error) {
         console.log(error)
     }
-}
+}*/
