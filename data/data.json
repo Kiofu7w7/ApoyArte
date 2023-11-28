@@ -47,6 +47,14 @@
       "descripcion": "pixeles",
       "categorias": "nueva",
       "id": 64
+    },
+    {
+      "id": "dfcdc1d4-b975-49e6-82e7-a9a878bcbdf0",
+      "nombreProducto": "lo que le gusta a Josue",
+      "precio": 651645,
+      "imagen": "https://img.michollo.com/app/deal/370221-1614200895042.jpg",
+      "descripcion": "meh",
+      "categorias": "nabo"
     }
   ],
   "usuarios": [
