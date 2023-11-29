@@ -1,5 +1,4 @@
 {
-  "homepage": "https://kiofu7w7.github.io/ApoyArte/pages/clienteVendedor/landing/index.html",
   "scripts": {
     "deploy": "gh-pages -d ."
   },
