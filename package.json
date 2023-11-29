@@ -1,0 +1,10 @@
+{
+  "homepage": "https://kiofu7w7.github.io/ApoyArte/pages/clienteVendedor/landing/index.html",
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}
