@@ -97,8 +97,8 @@
       "direccion": "calle 11 #12-41",
       "fechaNacimiento": "2001-01-01",
       "tipoCuenta": "administrador",
-      "carroActual": false,
-      "idCarrito": ""
+      "carroActual": true,
+      "idCarrito": "2"
     },
     {
       "id": "c7b4c875-fa8c-4455-b4f3-850deb8db2fb",
@@ -153,7 +153,21 @@
       }
     },
     {
-      "id": "129431289",
+      "id": "1",
+      "activo" : "true",
+      "productos" : {
+        "1" : {
+          "cantidad" : 3,
+          "nombre" : "cuadro"
+        },
+        "64" : {
+          "cantidad" : 3,
+          "nombre" : "cuadro"
+        }
+      }
+    },
+    {
+      "id": "2",
       "activo" : "true",
       "productos" : {
         "120" : {
@@ -167,7 +181,7 @@
       }
     },
     {
-      "id": "129431289",
+      "id": "3",
       "activo" : "true",
       "productos" : {
         "120" : {
@@ -181,21 +195,7 @@
       }
     },
     {
-      "id": "129431289",
-      "activo" : "true",
-      "productos" : {
-        "120" : {
-          "cantidad" : 3,
-          "nombre" : "cuadro"
-        },
-        "12" : {
-          "cantidad" : 3,
-          "nombre" : "cuadro"
-        }
-      }
-    },
-    {
-      "id": "129431289",
+      "id": "4",
       "activo" : "true",
       "productos" : {
         "120" : {
