@@ -82,7 +82,7 @@ body {
     margin-right: 10px;
   }
   
-  .btnGuardar{
+  .btnGuardarReg{
     width: auto;
     height: 100%;
     background-color: rgb(31, 189, 31);
@@ -97,7 +97,7 @@ body {
     font-weight: bold;
   }
 
-  .btnCancelar{
+  .btnCancelarReg{
     width: auto;
     height: 100%;
     background-color: rgba(31, 189, 31, 0);
