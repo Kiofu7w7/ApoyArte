@@ -20,7 +20,8 @@ body {
     overflow: visible;
 }
 .arte{
-    background: #f2f2f2;
+    background-image: url(https://res.cloudinary.com/dtmapxnao/image/upload/v1701191550/fondo-acuarela-pintada-mano-forma-cielo-nubes_zw33rj.jpg);
+    background-size: cover;
     padding: 60px 0;
 }
 
