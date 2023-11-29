@@ -1,8 +1,6 @@
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
+    height: 100vh;
+    margin: 15px;
 }
 
 
@@ -44,43 +42,28 @@ body {
 
 .arte .contenedor-arte{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.arte .contenedor-arte .dibujo{
-    width: 23%;
-    margin-bottom: 40px;
+    align-items: center;
+    flex-direction: column;
 }
 
-.arte .contenedor-arte .dibujo .thumb{
-    width: 100%;
-    margin-bottom: 10px;
+/* Estilos para la imagen */
+img{
+    max-width: 75%;
+    height: auto;
 }
 
-.arte .contenedor-arte .dibujo .thumb img{
-    width: 100%;
-    vertical-align: top;
-    /*por ultimo le damos un border redondo*/
-    border-radius: 3px;
+/* Estilos para el nombre del producto con diferentes colores */
+.precio{
+    color: #2deb2d;
 }
-.arte .contenedor-arte .dibujo .thumb img:hover{
-    animation-name: headShake;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
+.nombre{
+    font-size: 25px;
+    color: #3a8f3a;
 }
 
-/*Ahora vamos a darle estilos a las imagenes nos vamos*/
-.arte .contenedor-arte .dibujo .descripcion{
-    text-align: center;
-}
-
-.arte .contenedor-arte .dibujo .descripcion .nombre{
-    font-weight: 700;
-    color: #3895ea;
-    margin-bottom: 10px;
-}
-.arte .contenedor-arte .dibujo .descripcion .categoria{
-  font-size: 14px;
-  color: #636363;
+/* Estilos para el contenedor de las tarjetas */
+.tarjetas-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between; /* Espaciado uniforme entre las tarjetas */
 }

@@ -39,6 +39,22 @@
       "imagen": "https://bogart.com.co/wp-content/uploads/2020/11/dsf02015215gt1try.jpg",
       "descripcion": "Cuadro tamaño XL para sala de mariposas",
       "categorias": "Cuadros, XL"
+    },
+    {
+      "nombreProducto": "Cadritos",
+      "precio": 2560000,
+      "imagen": "https://res.cloudinary.com/dyepe4ih7/image/upload/v1701195574/ApoyArte/cyoojdq9hgmlctautbw9.jpg",
+      "descripcion": "pixeles",
+      "categorias": "nueva",
+      "id": 64
+    },
+    {
+      "id": "dfcdc1d4-b975-49e6-82e7-a9a878bcbdf0",
+      "nombreProducto": "lo que le gusta a Josue",
+      "precio": 651645,
+      "imagen": "https://img.michollo.com/app/deal/370221-1614200895042.jpg",
+      "descripcion": "meh",
+      "categorias": "nabo"
     }
   ],
   "usuarios": [
