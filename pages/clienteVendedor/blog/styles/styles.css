@@ -3,6 +3,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    background-image: url(https://res.cloudinary.com/dtmapxnao/image/upload/v1701191550/fondo-acuarela-pintada-mano-forma-cielo-nubes_zw33rj.jpg);
+    background-size: cover;
 }
 
 
