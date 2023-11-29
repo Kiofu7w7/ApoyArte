@@ -41,12 +41,12 @@
       "id": "dac79a6a-f5ff-4a75-9673-fa35b7b603c2"
     },
     {
-      "id": "89561c14-c5ea-4f8a-bfcd-11391e0ad134",
       "nombreProducto": "Habitacion contemporanea",
       "precio": 86700,
       "imagen": "https://res.cloudinary.com/dyepe4ih7/image/upload/v1701295554/ApoyArte/zvjbvwdrae8d8thda1pm.jpg",
       "descripcion": "inserte texto",
-      "categorias": "Arquitectura"
+      "categorias": "Arquitectura",
+      "id": "89561c14-c5ea-4f8a-bfcd-11391e0ad134"
     },
     {
       "id": "59c8e716-9fc7-48bc-8b2f-90786f4e1a7e",
