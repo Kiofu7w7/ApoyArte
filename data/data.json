@@ -6,7 +6,7 @@
       "imagen": "https://hips.hearstapps.com/hmg-prod/images/van-gogh-s-bedroom-in-arles-1889-1646929996.jpg",
       "descripcion": "descripcion prueba",
       "categorias": "escultura",
-      "id": 1
+      "id": "1"
     },
     {
       "nombreProducto": "Cuadro vangoj 3",
@@ -14,7 +14,7 @@
       "imagen": "https://hips.hearstapps.com/hmg-prod/images/oil-on-canvas-rijksmuseum-kroller-muller-otterlo-the-news-photo-1658241139.jpg",
       "descripcion": "descripcion 3",
       "categorias": "cuadros",
-      "id": 3
+      "id": "3"
     },
     {
       "nombreProducto": "Cuadro vangoj 4",
@@ -22,14 +22,14 @@
       "imagen": "https://hips.hearstapps.com/hmg-prod/images/van-gogh-s-bedroom-in-arles-1889-1646929996.jpg",
       "descripcion": "descripcion 4",
       "categorias": "ya si funciona",
-      "id": 4
+      "id": "4"
     },
     {
       "id": "1e44b323-4b2a-4580-b3c5-5e16fb31a97c",
-      "nombreProducto": "prueba",
-      "precio": 123456,
+      "nombreProducto": "cuadro repetido",
+      "precio": 22222,
       "imagen": "https://hips.hearstapps.com/hmg-prod/images/van-gogh-s-bedroom-in-arles-1889-1646929996.jpg",
-      "descripcion": "descripcion prueba",
+      "descripcion": "descripcion",
       "categorias": "escultura"
     },
     {
@@ -131,39 +131,81 @@
   ],
   "carritos": [
     {
-      "id": "1",
-      "activo" : "true"
-    },
-    {
-      "id": "2",
-      "activo" : "false",
+      "id": "129431289",
+      "activo" : "true",
       "productos" : {
-        "cuadro" : 1,
-        "pinturas" : 2
+        "1" : {
+          "cantidad" : 3,
+          "nombre" : "cuadro"
+        },
+        "3" : {
+          "cantidad" : 7,
+          "nombre" : "cuadro"
+        },
+        "64" : {
+          "cantidad" : 1,
+          "nombre" : "cuadro"
+        },
+        "1e44b323-4b2a-4580-b3c5-5e16fb31a97c" : {
+          "cantidad" : 6,
+          "nombre" : "cuadro 2"
+        }
       }
     },
     {
-      "id": "3",
-      "activo" : "false",
+      "id": "129431289",
+      "activo" : "true",
       "productos" : {
-        "cuadro" : 1,
-        "pinturas" : 2
+        "120" : {
+          "cantidad" : 3,
+          "nombre" : "cuadro"
+        },
+        "12" : {
+          "cantidad" : 3,
+          "nombre" : "cuadro"
+        }
       }
     },
     {
-      "id": "4",
-      "activo" : "false",
+      "id": "129431289",
+      "activo" : "true",
       "productos" : {
-        "cuadro" : 1,
-        "pinturas" : 2
+        "120" : {
+          "cantidad" : 3,
+          "nombre" : "cuadro"
+        },
+        "12" : {
+          "cantidad" : 3,
+          "nombre" : "cuadro"
+        }
       }
     },
     {
-      "id": "5",
-      "activo" : "false",
+      "id": "129431289",
+      "activo" : "true",
       "productos" : {
-        "cuadro" : 1,
-        "pinturas" : 2
+        "120" : {
+          "cantidad" : 3,
+          "nombre" : "cuadro"
+        },
+        "12" : {
+          "cantidad" : 3,
+          "nombre" : "cuadro"
+        }
+      }
+    },
+    {
+      "id": "129431289",
+      "activo" : "true",
+      "productos" : {
+        "120" : {
+          "cantidad" : 3,
+          "nombre" : "cuadro"
+        },
+        "12" : {
+          "cantidad" : 3,
+          "nombre" : "cuadro"
+        }
       }
     }
   ]

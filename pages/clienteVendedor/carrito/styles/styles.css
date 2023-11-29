@@ -3,6 +3,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    background-image: url(https://res.cloudinary.com/dtmapxnao/image/upload/v1701191550/fondo-acuarela-pintada-mano-forma-cielo-nubes_zw33rj.jpg);
+    background-size: cover;
 }
 
 
@@ -14,4 +16,72 @@ body {
 .footerObj {
     width: 100%;
     height: 100vh;
+}
+
+.containerDatos{
+    padding: 80px;
+    justify-content: center;
+}
+
+.contenedorInfo{
+    padding: 50px 80px;
+    background-color: white;
+}
+
+.containerDatosCarrito{
+    display: flex;
+    justify-content: space-around; 
+    padding: 20px;
+    background-color: rgba(31, 189, 31, 0.342);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 10px;
+}
+
+.tarjetaCarritoProducto {
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    min-width: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    background-color: white;
+    justify-content: flex-start;
+}
+
+.tarjetaCarritoProducto img {
+    margin-right: 10px;
+    max-width: 100px; 
+}
+
+h1 {
+    margin: 0; 
+}
+
+.detallesCarrito{
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 500px;
+}
+
+.datos{
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.cantidades{
+    display: flex;
+    align-items: center;
 }
