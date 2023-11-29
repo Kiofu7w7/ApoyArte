@@ -1,4 +1,4 @@
-import{obtenerProductos, buscarProducto} from '../../../../scripts/axiosFunc/axiosProducto.js';
+import{obtenerProductos} from '../../../../scripts/axiosFunc/axiosProducto.js';
 import{viewProductos} from '../../../../scripts/modules/mostrargaleria.js'
 
 let gal = document.getElementById('galeria');
