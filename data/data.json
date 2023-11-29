@@ -1,60 +1,68 @@
 {
   "productos": [
     {
-      "nombreProducto": "prueba",
+      "nombreProducto": "Cuadro vangoj 2",
       "precio": 123456,
       "imagen": "https://hips.hearstapps.com/hmg-prod/images/van-gogh-s-bedroom-in-arles-1889-1646929996.jpg",
       "descripcion": "descripcion prueba",
-      "categorias": "escultura",
-      "id": 1
+      "categorias": "Pintura",
+      "id": "1e44b323-4b2a-4580-b3c5-5e16fb31a97c"
     },
     {
-      "nombreProducto": "Cuadro vangoj 3",
-      "precio": 60000,
-      "imagen": "https://hips.hearstapps.com/hmg-prod/images/oil-on-canvas-rijksmuseum-kroller-muller-otterlo-the-news-photo-1658241139.jpg",
-      "descripcion": "descripcion 3",
-      "categorias": "cuadros",
-      "id": 3
-    },
-    {
-      "nombreProducto": "Cuadro vangoj 4",
-      "precio": 80000,
-      "imagen": "https://hips.hearstapps.com/hmg-prod/images/van-gogh-s-bedroom-in-arles-1889-1646929996.jpg",
-      "descripcion": "descripcion 4",
-      "categorias": "ya si funciona",
-      "id": 4
-    },
-    {
-      "id": "1e44b323-4b2a-4580-b3c5-5e16fb31a97c",
-      "nombreProducto": "prueba",
-      "precio": 123456,
-      "imagen": "https://hips.hearstapps.com/hmg-prod/images/van-gogh-s-bedroom-in-arles-1889-1646929996.jpg",
-      "descripcion": "descripcion prueba",
-      "categorias": "escultura"
-    },
-    {
-      "id": "cd6cb259-dd90-4354-907e-01c6ea1525ee",
-      "nombreProducto": "Cuadro XL mariposas",
+      "nombreProducto": "Oficina mariposario",
       "precio": 235400,
       "imagen": "https://bogart.com.co/wp-content/uploads/2020/11/dsf02015215gt1try.jpg",
       "descripcion": "Cuadro tamaño XL para sala de mariposas",
-      "categorias": "Cuadros, XL"
+      "categorias": "Arquitectura",
+      "id": "cd6cb259-dd90-4354-907e-01c6ea1525ee"
     },
     {
-      "nombreProducto": "Cadritos",
-      "precio": 2560000,
+      "id": "b158bd2c-daa6-442c-b473-ec083c9aa672",
+      "nombreProducto": "Cuadro vangoj 3",
+      "precio": 60000,
+      "imagen": "https://hips.hearstapps.com/hmg-prod/images/oil-on-canvas-rijksmuseum-kroller-muller-otterlo-the-news-photo-1658241139.jpg",
+      "descripcion": "inserte texto",
+      "categorias": "Pintura"
+    },
+    {
+      "id": "5ec2966f-245e-46e8-8e83-fd8ed30833fb",
+      "nombreProducto": "Atardecer de bits",
+      "precio": 256000,
       "imagen": "https://res.cloudinary.com/dyepe4ih7/image/upload/v1701195574/ApoyArte/cyoojdq9hgmlctautbw9.jpg",
-      "descripcion": "pixeles",
-      "categorias": "nueva",
-      "id": 64
+      "descripcion": "inserte texto",
+      "categorias": "Pixeles"
     },
     {
-      "id": "dfcdc1d4-b975-49e6-82e7-a9a878bcbdf0",
-      "nombreProducto": "lo que le gusta a Josue",
-      "precio": 651645,
-      "imagen": "https://img.michollo.com/app/deal/370221-1614200895042.jpg",
-      "descripcion": "meh",
-      "categorias": "nabo"
+      "nombreProducto": "Naturaleza a cuadros",
+      "precio": 0,
+      "imagen": "https://res.cloudinary.com/dyepe4ih7/image/upload/v1701195574/ApoyArte/fnyeew8yspytsfyxsrvv.jpg",
+      "descripcion": "insertar texto",
+      "categorias": "Pixeles",
+      "id": "dac79a6a-f5ff-4a75-9673-fa35b7b603c2"
+    },
+    {
+      "id": "89561c14-c5ea-4f8a-bfcd-11391e0ad134",
+      "nombreProducto": "Habitacion contemporanea",
+      "precio": 86700,
+      "imagen": "https://res.cloudinary.com/dyepe4ih7/image/upload/v1701295554/ApoyArte/zvjbvwdrae8d8thda1pm.jpg",
+      "descripcion": "inserte texto",
+      "categorias": "Arquitectura"
+    },
+    {
+      "id": "59c8e716-9fc7-48bc-8b2f-90786f4e1a7e",
+      "nombreProducto": "Colorful Cat",
+      "precio": 0,
+      "imagen": "https://res.cloudinary.com/dyepe4ih7/image/upload/v1701195574/ApoyArte/iwno27be3jzlbwzdhvgm.jpg",
+      "descripcion": "inserte texto",
+      "categorias": "Animales"
+    },
+    {
+      "id": "2fab8c1f-ac4c-4a01-92a0-c8633c9a3d3b",
+      "nombreProducto": "Grupo perruno",
+      "precio": 32470,
+      "imagen": "https://res.cloudinary.com/dyepe4ih7/image/upload/v1701195574/ApoyArte/abp4qxlcuco6rgxdibkq.jpg",
+      "descripcion": "inserte texto",
+      "categorias": "Animales"
     }
   ],
   "usuarios": [

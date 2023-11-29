@@ -8,3 +8,4 @@ document.addEventListener('DOMContentLoaded',async function(){
 
     viewProductos(art.data,gal);
 })
+
