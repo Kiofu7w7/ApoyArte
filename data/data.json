@@ -60,18 +60,16 @@
   "usuarios": [
     {
       "id": "1",
-      "nombreUsuario": "Kiofu7w7",
+      "nombreUsuario": "Kofidelay",
       "email": "plaga500@hotmail.com",
-      "contraseña": "patata1",
+      "contraseña": "patata1123",
       "primerNombre": "Santiago",
-      "segundoNombre": "Buitrago",
-      "primerApellido": "giraldo",
-      "segundoApellido": "",
+      "primerApellido": "Buitrago",
       "numeroContacto": "3006700461",
       "direccion": "cra49 #44-47",
       "fechaNacimiento": "2003-02-02",
       "tipoCuenta": "cliente",
-      "carroActual": true,
+      "carroActual": "true",
       "idCarrito": "129431289"
     },
     {
@@ -79,15 +77,13 @@
       "nombreUsuario": "mendofeo",
       "email": "mendofeo@hotmail.com",
       "contraseña": "feo123",
-      "primerNombre": "Mendoza",
-      "segundoNombre": "Mazo",
-      "primerApellido": "Camilo",
-      "segundoApellido": "",
+      "primerNombre": "Camilo",
+      "primerApellido": "Mendoza",
       "numeroContacto": "300123361",
       "direccion": "av 32 #42-41",
-      "fechaNacimiento": "2002-4-17",
+      "fechaNacimiento": "2002-08-17",
       "tipoCuenta": "vendedor",
-      "carroActual": false,
+      "carroActual": "false",
       "idCarrito": ""
     },
     {
@@ -96,12 +92,10 @@
       "email": "sebastiangey@hotmail.com",
       "contraseña": "sebastiangey123",
       "primerNombre": "Sebastian",
-      "segundoNombre": "Montaño",
       "primerApellido": "Juan",
-      "segundoApellido": "Perez",
       "numeroContacto": "30066661",
       "direccion": "calle 11 #12-41",
-      "fechaNacimiento": "2001-1-01",
+      "fechaNacimiento": "2001-01-01",
       "tipoCuenta": "administrador",
       "carroActual": false,
       "idCarrito": ""
@@ -112,15 +106,65 @@
       "email": "emai@gmail.comAA",
       "contraseña": "20343333",
       "primerNombre": "nombre1UsuEDITADO",
-      "segundoNombre": "nombre2UsuAA",
       "primerApellido": "ape1UsuAA",
-      "segundoApellido": "ape2UsuAAA",
       "numeroContacto": "51111",
       "direccion": "carrera 32 43- 32AA",
       "fechaNacimiento": "2023-11-05",
       "tipoCuenta": "vendedor",
       "carroActual": "true",
       "idCarrito": "123123"
+    },
+    {
+      "id": "5fe6eed0-d9cd-4d6f-8e45-59dceebe48da",
+      "nombreUsuario": "kiofu",
+      "email": "kiofu@gmail.com",
+      "contraseña": "2014",
+      "primerNombre": "prueba creacion",
+      "primerApellido": "apellido 3",
+      "numeroContacto": "3006700461",
+      "direccion": "cr 55 #55-66",
+      "fechaNacimiento": "2023-11-02",
+      "tipoCuenta": "administrador",
+      "carroActual": false,
+      "idCarrito": ""
+    }
+  ],
+  "carritos": [
+    {
+      "id": "1",
+      "activo" : "true"
+    },
+    {
+      "id": "2",
+      "activo" : "false",
+      "productos" : {
+        "cuadro" : 1,
+        "pinturas" : 2
+      }
+    },
+    {
+      "id": "3",
+      "activo" : "false",
+      "productos" : {
+        "cuadro" : 1,
+        "pinturas" : 2
+      }
+    },
+    {
+      "id": "4",
+      "activo" : "false",
+      "productos" : {
+        "cuadro" : 1,
+        "pinturas" : 2
+      }
+    },
+    {
+      "id": "5",
+      "activo" : "false",
+      "productos" : {
+        "cuadro" : 1,
+        "pinturas" : 2
+      }
     }
   ]
 }

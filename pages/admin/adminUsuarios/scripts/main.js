@@ -10,9 +10,7 @@ const botonConfirmarCrear = document.getElementById("btnConfirmarCrear")
 //--------------------Datos-------------------//
 
 const primerNombre = document.getElementById('primerNombreHtml');
-const segundoNombre = document.getElementById('segundoNombreHtml');
 const primerApellido = document.getElementById('primerApellidoHtml');
-const segundoApellido = document.getElementById('segundoApellidoHtml');
 const tipoCuenta = document.getElementById('tipoCuentaHtml');
 const nombreUsuario = document.getElementById('nombreUsuarioHtml');
 const email = document.getElementById('emailHtml');
@@ -37,7 +35,23 @@ document.addEventListener("DOMContentLoaded", async function () {
 //--------------------Crear productos-------------------//
 
 botonCrear.addEventListener('click', function(){
-    botonCrear.innerText
+    nombreUsuario.value = "";
+    primerApellido.value = "";
+    tipoCuenta.value = "cliente";
+    primerNombre.value = "";
+    primerApellido.value = "";
+    numeroContacto.value = "";
+    email.value = "";
+    carroActual.value = "";
+    contraseña.value = "";
+    direccion.value = "";
+    fechaNacimiento.value = "";
+    idHTML.value = "";
+    idCarrito.value = "";
+    carroActual.disabled = true;
+    idCarrito.disabled = true;
+    botonEditar.style.display = 'none'
+    botonConfirmarCrear.style.display = 'block'
 })
 
 
@@ -46,7 +60,7 @@ botonCrear.addEventListener('click', function(){
 //Parametros son nombre, precio, url imagen, descripcion, categoria (la id es automatica)
 
 botonConfirmarCrear.addEventListener('click', async () => {
-    await crearUsuario(nombreUsuario.value, email.value, contraseña.value, primerNombre.value, segundoNombre.value, primerApellido.value, segundoApellido.value, numeroContacto.value, direccion.value, fechaNacimiento.value, tipoCuenta.value)
+    await crearUsuario(nombreUsuario.value, email.value, contraseña.value, primerNombre.value, primerApellido.value, numeroContacto.value, direccion.value, fechaNacimiento.value, tipoCuenta.value)
 })
 
 //--------------------Editar y eliminar productos-------------------//
@@ -55,12 +69,9 @@ document.addEventListener("click", async ({ target }) => {
     if (target.classList.contains("editar")) {
         try {
             const user = await buscarUsuario(target.id);
-            console.log(user)
-            const { carroActual: carroActualE, contraseña:contraseñaE, direccion:direccionE, email:emailE, fechaNacimiento:fechaNacimientoE, id:idE, idCarrito:idCarritoE, nombreUsuario:nombreUsuarioE, numeroContacto: numeroContactoE, primerApellido:primerApellidoE, primerNombre:primerNombreE, segundoApellido:segundoApellidoE, segundoNombre:segundoNombreE, tipoCuenta:tipoCuentaE} = user.data;
+            const { carroActual: carroActualE, contraseña:contraseñaE, direccion:direccionE, email:emailE, fechaNacimiento:fechaNacimientoE, id:idE, idCarrito:idCarritoE, nombreUsuario:nombreUsuarioE, numeroContacto: numeroContactoE, primerApellido:primerApellidoE, primerNombre:primerNombreE,tipoCuenta:tipoCuentaE} = user.data;
             nombreUsuario.value = nombreUsuarioE;
-            segundoNombre.value = segundoNombreE;
             primerApellido.value = primerApellidoE;
-            segundoApellido.value = segundoApellidoE;
             tipoCuenta.value = tipoCuentaE;
             primerNombre.value = primerNombreE;
             primerApellido.value = primerApellidoE;
@@ -72,7 +83,6 @@ document.addEventListener("click", async ({ target }) => {
             fechaNacimiento.value = fechaNacimientoE;
             idHTML.value = idE;
             idCarrito.value = idCarritoE;
-            idHTML.disabled = false;
             carroActual.disabled = false;
             idCarrito.disabled = false;
             botonEditar.style.display = 'block'
@@ -91,5 +101,5 @@ document.addEventListener("click", async ({ target }) => {
 });
 
 botonEditar.addEventListener('click', async () => {
-    await editarUsuario(idHTML.value ,nombreUsuario.value, email.value, contraseña.value, primerNombre.value, segundoNombre.value, primerApellido.value, segundoApellido.value, numeroContacto.value, direccion.value, fechaNacimiento.value, tipoCuenta.value, carroActual.value, idCarrito.value)
+    await editarUsuario(idHTML.value ,nombreUsuario.value, email.value, contraseña.value, primerNombre.value, primerApellido.value, numeroContacto.value, direccion.value, fechaNacimiento.value, tipoCuenta.value, carroActual.value, idCarrito.value)
 })

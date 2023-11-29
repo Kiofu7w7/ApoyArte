@@ -22,7 +22,7 @@ export const buscarUsuario = async (idB) => {
 
 
 //--------------------Crear usuario-------------------//
-export const crearUsuario = async (usuarioU, emailU, contraseñaU, nombre1U, nombre2U, apelli1, apelli2, contactoU, direccionU, fechaNacimientoU, tipoCuentaU) => {
+export const crearUsuario = async (usuarioU, emailU, contraseñaU, nombre1U, apelli1, contactoU, direccionU, fechaNacimientoU, tipoCuentaU) => {
     try {
         await axios.post(url, {
             id: crypto.randomUUID(),
@@ -30,9 +30,7 @@ export const crearUsuario = async (usuarioU, emailU, contraseñaU, nombre1U, nom
             email: emailU,
             contraseña: contraseñaU,
             primerNombre: nombre1U,
-            segundoNombre: nombre2U,
             primerApellido : apelli1,
-            segundoApellido : apelli2,
             numeroContacto: contactoU,
             direccion: direccionU,
             fechaNacimiento: fechaNacimientoU,
@@ -57,7 +55,7 @@ export const borrarUsuario = async (idU) => {
 
 //--------------------Editar producto-------------------//
 
-export const editarUsuario = async (idU, usuarioU, emailU, contraseñaU, nombre1U, nombre2U, apelli1, apelli2, contactoU, direccionU, fechaNacimientoU, tipoCuentaU, carroActualU, idCarritoU) => {
+export const editarUsuario = async (idU, usuarioU, emailU, contraseñaU, nombre1U, apelli1, contactoU, direccionU, fechaNacimientoU, tipoCuentaU, carroActualU, idCarritoU) => {
     try {
         await axios.put(url+"/"+idU,{
             id: idU,
@@ -65,9 +63,7 @@ export const editarUsuario = async (idU, usuarioU, emailU, contraseñaU, nombre1
             email: emailU,
             contraseña: contraseñaU,
             primerNombre: nombre1U,
-            segundoNombre: nombre2U,
             primerApellido : apelli1,
-            segundoApellido : apelli2,
             numeroContacto: contactoU,
             direccion: direccionU,
             fechaNacimiento: fechaNacimientoU,
