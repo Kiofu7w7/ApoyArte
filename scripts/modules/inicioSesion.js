@@ -16,7 +16,7 @@ export const buscarUsuario = async (emailEnvio, contraseñaEnvio) => {
         });
         const users = response.data;
         if (users.some(user => user.email == emailEnvio && user.contraseña == contraseñaEnvio)) {
-            return true;
+            return [true, users[0].id];
         } else {
             return false;
         }

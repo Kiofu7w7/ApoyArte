@@ -1,75 +1,85 @@
 {
   "productos": [
     {
-      "nombreProducto": "prueba",
+      "nombreProducto": "Cuadro vangoj 2",
       "precio": 123456,
       "imagen": "https://hips.hearstapps.com/hmg-prod/images/van-gogh-s-bedroom-in-arles-1889-1646929996.jpg",
       "descripcion": "descripcion prueba",
-      "categorias": "escultura",
-      "id": "1"
+      "categorias": "Pintura",
+      "id": "1e44b323-4b2a-4580-b3c5-5e16fb31a97c"
     },
     {
-      "nombreProducto": "Cuadro vangoj 3",
-      "precio": 60000,
-      "imagen": "https://hips.hearstapps.com/hmg-prod/images/oil-on-canvas-rijksmuseum-kroller-muller-otterlo-the-news-photo-1658241139.jpg",
-      "descripcion": "descripcion 3",
-      "categorias": "cuadros",
-      "id": "3"
-    },
-    {
-      "nombreProducto": "Cuadro vangoj 4",
-      "precio": 80000,
-      "imagen": "https://hips.hearstapps.com/hmg-prod/images/van-gogh-s-bedroom-in-arles-1889-1646929996.jpg",
-      "descripcion": "descripcion 4",
-      "categorias": "ya si funciona",
-      "id": "4"
-    },
-    {
-      "id": "1e44b323-4b2a-4580-b3c5-5e16fb31a97c",
-      "nombreProducto": "cuadro repetido",
-      "precio": 22222,
-      "imagen": "https://hips.hearstapps.com/hmg-prod/images/van-gogh-s-bedroom-in-arles-1889-1646929996.jpg",
-      "descripcion": "descripcion",
-      "categorias": "escultura"
-    },
-    {
-      "id": "cd6cb259-dd90-4354-907e-01c6ea1525ee",
-      "nombreProducto": "Cuadro XL mariposas",
+      "nombreProducto": "Oficina mariposario",
       "precio": 235400,
       "imagen": "https://bogart.com.co/wp-content/uploads/2020/11/dsf02015215gt1try.jpg",
       "descripcion": "Cuadro tamaño XL para sala de mariposas",
-      "categorias": "Cuadros, XL"
+      "categorias": "Arquitectura",
+      "id": "cd6cb259-dd90-4354-907e-01c6ea1525ee"
     },
     {
-      "nombreProducto": "Cadritos",
-      "precio": 2560000,
+      "id": "b158bd2c-daa6-442c-b473-ec083c9aa672",
+      "nombreProducto": "Cuadro vangoj 3",
+      "precio": 60000,
+      "imagen": "https://hips.hearstapps.com/hmg-prod/images/oil-on-canvas-rijksmuseum-kroller-muller-otterlo-the-news-photo-1658241139.jpg",
+      "descripcion": "inserte texto",
+      "categorias": "Pintura"
+    },
+    {
+      "id": "5ec2966f-245e-46e8-8e83-fd8ed30833fb",
+      "nombreProducto": "Atardecer de bits",
+      "precio": 256000,
       "imagen": "https://res.cloudinary.com/dyepe4ih7/image/upload/v1701195574/ApoyArte/cyoojdq9hgmlctautbw9.jpg",
-      "descripcion": "pixeles",
-      "categorias": "nueva",
-      "id": 64
+      "descripcion": "inserte texto",
+      "categorias": "Pixeles"
     },
     {
-      "id": "dfcdc1d4-b975-49e6-82e7-a9a878bcbdf0",
-      "nombreProducto": "lo que le gusta a Josue",
-      "precio": 651645,
-      "imagen": "https://img.michollo.com/app/deal/370221-1614200895042.jpg",
-      "descripcion": "meh",
-      "categorias": "nabo"
+      "nombreProducto": "Naturaleza a cuadros",
+      "precio": 0,
+      "imagen": "https://res.cloudinary.com/dyepe4ih7/image/upload/v1701195574/ApoyArte/fnyeew8yspytsfyxsrvv.jpg",
+      "descripcion": "insertar texto",
+      "categorias": "Pixeles",
+      "id": "dac79a6a-f5ff-4a75-9673-fa35b7b603c2"
+    },
+    {
+      "nombreProducto": "Habitacion contemporanea",
+      "precio": 86700,
+      "imagen": "https://res.cloudinary.com/dyepe4ih7/image/upload/v1701295554/ApoyArte/zvjbvwdrae8d8thda1pm.jpg",
+      "descripcion": "inserte texto",
+      "categorias": "Arquitectura",
+      "id": "89561c14-c5ea-4f8a-bfcd-11391e0ad134"
+    },
+    {
+      "id": "59c8e716-9fc7-48bc-8b2f-90786f4e1a7e",
+      "nombreProducto": "Colorful Cat",
+      "precio": 0,
+      "imagen": "https://res.cloudinary.com/dyepe4ih7/image/upload/v1701195574/ApoyArte/iwno27be3jzlbwzdhvgm.jpg",
+      "descripcion": "inserte texto",
+      "categorias": "Animales"
+    },
+    {
+      "id": "2fab8c1f-ac4c-4a01-92a0-c8633c9a3d3b",
+      "nombreProducto": "Grupo perruno",
+      "precio": 32470,
+      "imagen": "https://res.cloudinary.com/dyepe4ih7/image/upload/v1701195574/ApoyArte/abp4qxlcuco6rgxdibkq.jpg",
+      "descripcion": "inserte texto",
+      "categorias": "Animales"
     }
   ],
   "usuarios": [
     {
       "id": "1",
-      "nombreUsuario": "Kofidelay",
-      "email": "plagas500@hotmail.com",
-      "contraseña": "patata1123",
+      "nombreUsuario": "Kiofu7w7",
+      "email": "plaga500@hotmail.com",
+      "contraseña": "patata1",
       "primerNombre": "Santiago",
-      "primerApellido": "Buitrago",
+      "segundoNombre": "Buitrago",
+      "primerApellido": "giraldo",
+      "segundoApellido": "",
       "numeroContacto": "3006700461",
       "direccion": "cra49 #44-47",
       "fechaNacimiento": "2003-02-02",
       "tipoCuenta": "cliente",
-      "carroActual": "true",
+      "carroActual": true,
       "idCarrito": "129431289"
     },
     {
@@ -77,13 +87,15 @@
       "nombreUsuario": "mendofeo",
       "email": "mendofeo@hotmail.com",
       "contraseña": "feo123",
-      "primerNombre": "Camilo",
-      "primerApellido": "Mendoza",
+      "primerNombre": "Mendoza",
+      "segundoNombre": "Mazo",
+      "primerApellido": "Camilo",
+      "segundoApellido": "",
       "numeroContacto": "300123361",
       "direccion": "av 32 #42-41",
-      "fechaNacimiento": "2002-08-17",
+      "fechaNacimiento": "2002-4-17",
       "tipoCuenta": "vendedor",
-      "carroActual": "false",
+      "carroActual": false,
       "idCarrito": ""
     },
     {
@@ -92,13 +104,15 @@
       "email": "sebastiangey@hotmail.com",
       "contraseña": "sebastiangey123",
       "primerNombre": "Sebastian",
+      "segundoNombre": "Montaño",
       "primerApellido": "Juan",
+      "segundoApellido": "Perez",
       "numeroContacto": "30066661",
       "direccion": "calle 11 #12-41",
-      "fechaNacimiento": "2001-01-01",
+      "fechaNacimiento": "2001-1-01",
       "tipoCuenta": "administrador",
-      "carroActual": true,
-      "idCarrito": "2"
+      "carroActual": false,
+      "idCarrito": ""
     },
     {
       "id": "c7b4c875-fa8c-4455-b4f3-850deb8db2fb",
@@ -106,40 +120,15 @@
       "email": "emai@gmail.comAA",
       "contraseña": "20343333",
       "primerNombre": "nombre1UsuEDITADO",
+      "segundoNombre": "nombre2UsuAA",
       "primerApellido": "ape1UsuAA",
+      "segundoApellido": "ape2UsuAAA",
       "numeroContacto": "51111",
       "direccion": "carrera 32 43- 32AA",
       "fechaNacimiento": "2023-11-05",
       "tipoCuenta": "vendedor",
       "carroActual": "true",
       "idCarrito": "123123"
-    },
-    {
-      "id": "5fe6eed0-d9cd-4d6f-8e45-59dceebe48da",
-      "nombreUsuario": "kiofu",
-      "email": "kiofu@gmail.com",
-      "contraseña": "2014",
-      "primerNombre": "prueba creacion",
-      "primerApellido": "apellido 3",
-      "numeroContacto": "3006700461",
-      "direccion": "cr 55 #55-66",
-      "fechaNacimiento": "2023-11-02",
-      "tipoCuenta": "administrador",
-      "carroActual": false,
-      "idCarrito": ""
-    },
-    {
-      "id": "2e62c589-25e6-43ce-9577-fb3fff948591",
-      "nombreUsuario": "kofidelay7w7",
-      "email": "plaga500@hotmail.com",
-      "contraseña": "patata1",
-      "primerNombre": "buitra",
-      "primerApellido": "santi",
-      "numeroContacto": "3006700461",
-      "direccion": "cra49#44-47",
-      "tipoCuenta": "Cliente",
-      "carroActual": false,
-      "idCarrito": ""
     }
   ],
   "carritos": [

@@ -3,7 +3,9 @@ import { viewCarritoProductos } from "../../../../scripts/modules/mostrarCarrito
 import { buscarUsuario } from "../../../../scripts/axiosFunc/axiosUsuario.js"
 import { buscarProducto } from "../../../../scripts/axiosFunc/axiosProducto.js"
 
-const idUsuario = "1" ///ESTO SE CAMBIA CUANDO SE TENGA EL LOCAL STORAGE
+let datosUser = localStorage.getItem('userData');
+
+const idUsuario = datosUser ///ESTO SE CAMBIA CUANDO SE TENGA EL LOCAL STORAGE
 const prueba = await buscarCarrito(idUsuario)
 console.log(prueba)
 const editarDatos = prueba
