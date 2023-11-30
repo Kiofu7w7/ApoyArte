@@ -17,12 +17,16 @@
             <img class="imgReg" src="https://res.cloudinary.com/dtmapxnao/image/upload/v1701186779/4058697_2121601_wsb50h.jpg">
         </div>
         <div class="ContTodForm">
-            <form action="procesar.php" method="post" class="FormReg">
+            <form class="FormReg">
                 <div class="ContForm">
                 <h1 class="Formh1">FORM</h1>
                 </div>
             
                 <div class="DirEst">
+                    <div style="margin-right: 15%;">
+                        <label for="Usuario">Usuario:</label>
+                        <input type="text" name="nombre" id="usuario" placeholder="Tu usuario">
+                    </div>
                     <div style="margin-right: 15%;">
                         <label for="nombre">Nombre:</label>
                         <input type="text" name="nombre" id="nombre" placeholder="Tu nombre">
@@ -74,6 +78,7 @@
         © 2023 Copyright:
         <a class="text-reset fw-bold">ApoyArte</a>
     </div>
-    <script src="../sign/scripts/main.js"></script>
+    <script src="../sign/scripts/main.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </html>

@@ -61,7 +61,7 @@
     {
       "id": "1",
       "nombreUsuario": "Kofidelay",
-      "email": "plaga500@hotmail.com",
+      "email": "plagas500@hotmail.com",
       "contraseña": "patata1123",
       "primerNombre": "Santiago",
       "primerApellido": "Buitrago",
@@ -125,6 +125,19 @@
       "direccion": "cr 55 #55-66",
       "fechaNacimiento": "2023-11-02",
       "tipoCuenta": "administrador",
+      "carroActual": false,
+      "idCarrito": ""
+    },
+    {
+      "id": "2e62c589-25e6-43ce-9577-fb3fff948591",
+      "nombreUsuario": "kofidelay7w7",
+      "email": "plaga500@hotmail.com",
+      "contraseña": "patata1",
+      "primerNombre": "buitra",
+      "primerApellido": "santi",
+      "numeroContacto": "3006700461",
+      "direccion": "cra49#44-47",
+      "tipoCuenta": "Cliente",
       "carroActual": false,
       "idCarrito": ""
     }

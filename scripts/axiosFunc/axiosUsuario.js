@@ -22,7 +22,7 @@ export const buscarUsuario = async (idB) => {
 
 
 //--------------------Crear usuario-------------------//
-export const crearUsuario = async (usuarioU, emailU, contraseñaU, nombre1U, apelli1, contactoU, direccionU, fechaNacimientoU, tipoCuentaU) => {
+export const crearUsuario = async (usuarioU, emailU, contraseñaU, nombre1U, apelli1, contactoU, direccionU, tipoCuentaU) => {
     try {
         await axios.post(url, {
             id: crypto.randomUUID(),
@@ -33,7 +33,6 @@ export const crearUsuario = async (usuarioU, emailU, contraseñaU, nombre1U, ape
             primerApellido : apelli1,
             numeroContacto: contactoU,
             direccion: direccionU,
-            fechaNacimiento: fechaNacimientoU,
             tipoCuenta: tipoCuentaU,
             carroActual: false,
             idCarrito: ""
