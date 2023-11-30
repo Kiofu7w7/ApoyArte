@@ -9,13 +9,10 @@ let detail = document.getElementById('detalle');
 let name = document.querySelector('#nombre');
 let price = document.querySelector('#precio');
 
-document.addEventListener('DOMContentLoaded',function(){
-    console.log(cuadro.imagen)
-    image.setAttribute('src', cuadro.imagen);
-    detail.innerText = cuadro.descripcion;
-    name.innerText = cuadro.nombreProducto;
-    price.innerText = cuadro.precio;
-})
+image.setAttribute('src', cuadro.imagen);
+detail.innerText = cuadro.descripcion;
+name.innerText = cuadro.nombreProducto;
+price.innerText = '$' + cuadro.precio + ' cop';
 
 document.querySelector("#back").addEventListener("click", function () {
     enviar();
