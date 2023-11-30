@@ -1,4 +1,6 @@
 body {
+    background-image: url(https://res.cloudinary.com/dtmapxnao/image/upload/v1701191550/fondo-acuarela-pintada-mano-forma-cielo-nubes_zw33rj.jpg);
+    background-size: cover;
     height: 100vh;
     margin: 15px;
 }
@@ -17,33 +19,16 @@ body {
 .contenedor{
     overflow: visible;
 }
-.arte{
-    background-image: url(https://res.cloudinary.com/dtmapxnao/image/upload/v1701191550/fondo-acuarela-pintada-mano-forma-cielo-nubes_zw33rj.jpg);
-    background-size: cover;
-    padding: 60px 0;
-}
-
-.arte .contenedor{
-    overflow: hidden;
-}
-
-.arte .contenedor .titulo{
-    font-family: 'Great Vibes', bold;
-    font-size: 50px;
-    line-height: 34px;
-    margin-bottom: 40px;
-    font-weight: 400;
-    color: #323068;
-    text-align: center;
-    animation-name: pulse;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-}
-
-.arte .contenedor-arte{
+.filtro{
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    margin: 15px 0px;
+}
+
+.arte{
+    background-size: cover;
+    padding: 60px 0;
 }
 
 /* Estilos para la imagen */
@@ -51,8 +36,6 @@ img{
     max-width: 75%;
     height: auto;
 }
-
-/* Estilos para el nombre del producto con diferentes colores */
 .precio{
     color: #2deb2d;
 }
@@ -60,10 +43,12 @@ img{
     font-size: 25px;
     color: #3a8f3a;
 }
-
-/* Estilos para el contenedor de las tarjetas */
 .tarjetas-container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    justify-content: space-between; /* Espaciado uniforme entre las tarjetas */
+    justify-content: space-between; 
+    text-decoration: none;
+}
+.tarjetas-container a{
+    text-decoration: none;
 }
