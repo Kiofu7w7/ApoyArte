@@ -1,17 +1,19 @@
-import { buscarUsuario } from "../../../../scripts/modules/inicioSesion.js"
+import { buscarUsuario } from "../../../../scripts/modules/inicioSesion.js";
 
 async function ejecutarInicioSesion(emailEnviar, contraEnviar) {
     try {
-        if(emailEnviar != "" && contraEnviar != ""){
-            const [variable, data] = await buscarUsuario(emailEnviar, contraEnviar);
-            if (variable == true){
-                window.location="../../clienteVendedor/landing/index.html ";
-                localStorage.setItem('auth', variable);
-                localStorage.setItem('userData', data);
-            }else{
+        if (emailEnviar !== "" && contraEnviar !== "") {
+            const result = await buscarUsuario(emailEnviar, contraEnviar);
+            console.log(result.user)
+            const ususa = result.user
+            if (result) {
+                localStorage.setItem('auth', result.success);
+                localStorage.setItem('userData', JSON.stringify(ususa));
+                window.location.href = "../../clienteVendedor/landing/index.html";
+            } else {
                 alert("Datos no coinciden con la base de datos");
             }
-        }else{
+        } else {
             alert("Todos los campos son requeridos");
         }
     } catch (error) {
@@ -19,10 +21,10 @@ async function ejecutarInicioSesion(emailEnviar, contraEnviar) {
     }
 }
 
-const botonInicio = document.getElementById("inicioSesion")
-const emailHTML = document.getElementById("email")
-const passwordHTML = document.getElementById("password")
+const botonInicio = document.getElementById("inicioSesion");
+const emailHTML = document.getElementById("email");
+const passwordHTML = document.getElementById("password");
 
-botonInicio.addEventListener('click', async ()=> {
-    ejecutarInicioSesion(emailHTML.value, passwordHTML.value)
-})
+botonInicio.addEventListener('click', async () => {
+    await ejecutarInicioSesion(emailHTML.value, passwordHTML.value);
+});
