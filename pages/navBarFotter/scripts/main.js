@@ -1,35 +1,47 @@
-import { buscarCarrito } from "../../../../scripts/axiosFunc/axiosCarritos.js"
-import { buscarUsuario } from "../../../scripts/axiosFunc/axiosUsuario.js"
+import { buscarCarrito } from "../../../../scripts/axiosFunc/axiosCarritos.js";
+import { buscarUsuario } from "../../../scripts/axiosFunc/axiosUsuario.js";
 
 let auth = localStorage.getItem('auth');
-let datosUser = localStorage.getItem('userData');
+let datosUser = JSON.parse(localStorage.getItem('userData'));
 
-const idUsuario = datosUser
-const carrito = await buscarCarrito(idUsuario)
-let obtenePrecios;
-if (carrito && carrito.productos) {
-    obtenePrecios = Object.keys(carrito.productos);
+
+if (!auth || !datosUser) {
+    // Handle the case where either auth or userData is missing
+    console.log("no iniciado secion")
 } else {
-    obtenePrecios = []; // o cualquier valor por defecto que quieras asignar
-}
-const numero = obtenePrecios.length
-const numeroCarrito = document.getElementById("numeroCarrito")
+    const idUsuario = datosUser.id;
+    const carrito = await buscarCarrito(idUsuario);
+    let obtenerPrecios;
 
-if(numero!=0){
-    numeroCarrito.style.display = ""
-    numeroCarrito.innerText = numero
-}else{
-    numeroCarrito.style.display = "none"
-}
+    if (carrito && carrito.productos) {
+        obtenerPrecios = Object.keys(carrito.productos);
+    } else {
+        obtenerPrecios = [];
+    }
 
+    const numero = obtenerPrecios.length;
+    const numeroCarrito = document.getElementById("numeroCarrito");
 
-const datosUserData = await buscarUsuario(datosUser)
-const prueba = datosUserData.data
+    if (numero !== 0) {
+        numeroCarrito.style.display = "";
+        numeroCarrito.innerText = numero;
+    } else {
+        numeroCarrito.style.display = "none";
+    }
 
-if (prueba.tipoCuenta == "cliente") {
-    console.log("cliente")
-}else if (prueba.tipoCuenta == "administrador"){
-    console.log("admin")
-}else if(prueba.tipoCuenta == "vendedor"){
-    console.log("venderdor")
+    try {
+        const datosUserData = await buscarUsuario("1");
+        const prueba = datosUserData.data;
+
+        if (prueba.tipoCuenta === "cliente") {
+            console.log("cliente");
+        } else if (prueba.tipoCuenta === "administrador") {
+            console.log("admin");
+        } else if (prueba.tipoCuenta === "vendedor") {
+            console.log("vendedor");
+        }
+    } catch (error) {
+        // Handle the case where there is an error fetching user data
+        console.error("Error fetching user data:", error);
+    }
 }

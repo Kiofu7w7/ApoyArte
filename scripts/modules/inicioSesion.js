@@ -3,25 +3,26 @@ const url = 'http://localhost:3000/usuarios';
 export const buscarUsuario = async (emailEnvio, contraseñaEnvio) => {
     try {
         if (!emailEnvio || !contraseñaEnvio) {
-            throw false;
+            throw new Error("Email y contraseña son obligatorios");
         }
-        if (emailEnvio == "" && contraseñaEnvio == "") {
-            throw false;
-        }
+
         const response = await axios.get(url, {
             params: {
                 email: emailEnvio,
                 contraseña: contraseñaEnvio
             }
         });
+
         const users = response.data;
-        if (users.some(user => user.email == emailEnvio && user.contraseña == contraseñaEnvio)) {
-            return [true, users[0].id];
+        const userFound = users.find(user => user.email === emailEnvio && user.contraseña === contraseñaEnvio);
+
+        if (userFound) {
+            return { success: true, user: userFound };
         } else {
-            return false;
+            return { success: false, message: "Usuario no encontrado" };
         }
     } catch (error) {
-        console.error(error);
-        return false;
+        console.error(error.message);
+        return { success: false, message: error.message };
     }
 };
