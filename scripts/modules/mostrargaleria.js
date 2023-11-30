@@ -2,7 +2,7 @@ export const viewProductos = (data, container) => {
     container.innerHTML = "";
 
     data?.forEach((element) => {
-        const { categorias, descripcion, id, imagen, nombreProducto, precio} = element;
+        const {imagen, nombreProducto, precio, categorias} = element;
         container.innerHTML += `
         <a>
             <div class="dibujo" style="text-align: center;">
