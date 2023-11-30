@@ -6,18 +6,14 @@ body {
     background-image: url(https://res.cloudinary.com/dtmapxnao/image/upload/v1701191550/fondo-acuarela-pintada-mano-forma-cielo-nubes_zw33rj.jpg);
     background-size: cover;
 }
-
-
 .navbarObj {
     width: 100%;
     height: auto;
 }
-
 .footerObj {
     width: 100%;
     height: 100vh;
 }
-
 .todito{
     padding: 10px 20px;
     display: grid;
