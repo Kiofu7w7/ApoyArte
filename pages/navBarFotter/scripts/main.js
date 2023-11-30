@@ -3,10 +3,13 @@ import { buscarUsuario } from "../../../scripts/axiosFunc/axiosUsuario.js";
 
 let auth = localStorage.getItem('auth');
 let datosUser = JSON.parse(localStorage.getItem('userData'));
-
+const divLogSign = document.getElementById("noLog")
+const divUser = document.getElementById("divNom")
+const nombreUser = document.getElementById("nonbreUsuario")
 
 if (!auth || !datosUser) {
-    // Handle the case where either auth or userData is missing
+    divLogSign.style.display = ""
+    divUser.style.display = "none"
     console.log("no iniciado secion")
 } else {
     const idUsuario = datosUser.id;
@@ -30,15 +33,23 @@ if (!auth || !datosUser) {
     }
 
     try {
-        const datosUserData = await buscarUsuario("1");
+        const datosUserData = await buscarUsuario(idUsuario); //cambiar
         const prueba = datosUserData.data;
-
         if (prueba.tipoCuenta === "cliente") {
             console.log("cliente");
+            nombreUser.innerText = datosUser.nombreUsuario
+            divLogSign.style.display = "none"
+            divUser.style.display = ""
         } else if (prueba.tipoCuenta === "administrador") {
             console.log("admin");
+            nombreUser.innerText = datosUser.nombreUsuario
+            divLogSign.style.display = "none"
+            divUser.style.display = ""
         } else if (prueba.tipoCuenta === "vendedor") {
             console.log("vendedor");
+            nombreUser.innerText = datosUser.nombreUsuario
+            divLogSign.style.display = "none"
+            divUser.style.display = ""
         }
     } catch (error) {
         // Handle the case where there is an error fetching user data

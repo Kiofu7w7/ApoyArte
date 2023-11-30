@@ -3,11 +3,10 @@ import { viewCarritoProductos } from "../../../../scripts/modules/mostrarCarrito
 import { buscarUsuario } from "../../../../scripts/axiosFunc/axiosUsuario.js"
 import { buscarProducto } from "../../../../scripts/axiosFunc/axiosProducto.js"
 
-let datosUser = localStorage.getItem('userData');
-
-const idUsuario = datosUser ///ESTO SE CAMBIA CUANDO SE TENGA EL LOCAL STORAGE
+let datosUser = JSON.parse(localStorage.getItem('userData'));
+const idUsuario = datosUser.id
 const prueba = await buscarCarrito(idUsuario)
-console.log(prueba)
+
 const editarDatos = prueba
 const obtenePrecios = Object.keys(prueba.productos) //SE OBTIENEN TODAS LAS IDS DEL CARRITO
 const contenedor = document.getElementById("container")

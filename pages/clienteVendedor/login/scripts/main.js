@@ -3,7 +3,7 @@ import { buscarUsuario } from "../../../../scripts/modules/inicioSesion.js";
 async function ejecutarInicioSesion(emailEnviar, contraEnviar) {
     try {
         if (emailEnviar !== "" && contraEnviar !== "") {
-            const result = await buscarUsuario("plaga500@hotmail.com", "patata1");
+            const result = await buscarUsuario(emailEnviar, contraEnviar);
             console.log(result.user)
             const ususa = result.user
             if (result) {
