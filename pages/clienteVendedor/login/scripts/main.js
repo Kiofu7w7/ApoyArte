@@ -3,9 +3,11 @@ import { buscarUsuario } from "../../../../scripts/modules/inicioSesion.js"
 async function ejecutarInicioSesion(emailEnviar, contraEnviar) {
     try {
         if(emailEnviar != "" && contraEnviar != ""){
-            const variable = await buscarUsuario(emailEnviar, contraEnviar);
+            const [variable, data] = await buscarUsuario(emailEnviar, contraEnviar);
             if (variable == true){
                 window.location="../../clienteVendedor/landing/index.html ";
+                localStorage.setItem('auth', variable);
+                localStorage.setItem('userData', data);
             }else{
                 alert("Datos no coinciden con la base de datos");
             }

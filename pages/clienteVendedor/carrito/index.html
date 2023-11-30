@@ -5,16 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <head class="navbar">
         <object class="navbarObj" data="../../navBarFotter/navbar.html" type="text/html">
         </object>
     </head>
-
+    <div class="containerDatos">
+        <div class="contenedorInfo">
+            <div class="containerDatosCarrito">
+                <div id="container">
+            
+                </div>
+                <div class="detallesCarrito">
+                    <div class="datos usuario">
+                        <h2 id="nombreHTML">Nombre completo: </h2>
+                        <h2 id="contactoHTML">Numero de contacto: </h2>
+                        <h3 id="direccionHTML">Direccion de entrega: </h3>
+                    </div>
+                    <div class="datos pago">
+                        <h2>Metodo de pago</h2>
+                        <button id="PSE" class="boton">PSE</button>
+                        <button id="EFECTIVO" class="boton">EFECTIVO</button>
+                        <button id="EFECTY" class="boton">EFECTY</button>
+                    </div>
+                    <div class="datos finalizar">
+                        <h2 id="totalHTML">Total a pagar: </h2>
+                        <button>COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <object class="footerObj" data="../../navBarFotter/fotter.html" type="text/html">
         </object>
     </footer>
 </body>
+<script type="module" src="./scripts/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </html>

@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url(https://res.cloudinary.com/dtmapxnao/image/upload/v1701191550/fondo-acuarela-pintada-mano-forma-cielo-nubes_zw33rj.jpg);
+    background-size: cover;
+}
+
+
+.navbarObj {
+    width: 100%;
+    height: auto;
+}
+
+.footerObj {
+    width: 100%;
+    height: 100vh;
+}
+
+.total{
+    display: flex;
+    padding: 40px;
+}
+
+img{
+    max-width: 70%;
+}
+
+.contenedorCuadros{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.total .contenedorCuadros .contact{
+    background-color: rgba(31, 189, 31, 0.342);
+    padding: 20px;
+}
+
+.total .contenedorCuadros .contact h1{
+    font-weight: 700;
+}
+
+.total .contenedorCuadros .contact button{
+    background: rgb(31, 189, 31);
+    color: aliceblue;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 30px;
+    text-decoration: underline;
+}
+
+footer{
+    height: fit-content !important;
+}
+
+footer object{
+    height: 450px !important;
+}

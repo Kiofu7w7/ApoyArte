@@ -2,11 +2,10 @@ export const viewUsuarios = (data, container) => {
     container.innerHTML = "";
 
     data?.forEach((element) => {
-        const { carroActual, contraseña, direccion, email, fechaNacimiento, id, idCarrito, nombreUsuario, numeroContacto, primerApellido, primerNombre, segundoApellido, segundoNombre, tipoCuenta} = element;
+        const { carroActual, contraseña, direccion, email, fechaNacimiento, id, idCarrito, nombreUsuario, numeroContacto, primerApellido, primerNombre,tipoCuenta} = element;
         container.innerHTML += `
         <div class="tarjetaProducto">
-            <h2>${primerNombre} ${segundoNombre}</h2>
-            <h3>${primerApellido} ${segundoApellido}</h3>
+            <h2>${primerNombre} ${primerApellido}</h2>
             <h3>Tipo de cuenta: ${tipoCuenta}</h3>
             <h3>Usuario: ${nombreUsuario}</h3>
             <h3>Email: ${email}</h3>
