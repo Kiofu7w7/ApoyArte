@@ -26,6 +26,11 @@ body {
 .contenedorInfo{
     padding: 50px 80px;
     background-color: white;
+    border-radius: 15px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255, 0.2);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(7, 7, 7, 0.3);
 }
 
 .containerDatosCarrito{
@@ -33,6 +38,8 @@ body {
     justify-content: space-around; 
     padding: 20px;
     background-color: rgba(31, 189, 31, 0.342);
+    border-radius: 15px;
+    border: 2px solid rgba(7, 7, 7, 0.3);
 }
 
 #container {
@@ -43,7 +50,7 @@ body {
 }
 
 .tarjetaCarritoProducto {
-    border: 1px solid rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(7, 7, 7, 0.3);
     border-radius: 5px;
     min-width: auto;
     padding: 10px;
@@ -53,6 +60,10 @@ body {
     align-items: center;
     background-color: white;
     justify-content: flex-start;
+}
+
+.infoProducto{
+    width: 100%;
 }
 
 .tarjetaCarritoProducto img {
@@ -74,7 +85,7 @@ h1 {
 }
 
 .datos{
-    border: 1px solid rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(7, 7, 7, 0.3);
     border-radius: 5px;
     margin: 10px;
     padding: 10px;
@@ -84,4 +95,26 @@ h1 {
 .cantidades{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.editCant{
+    display: flex;
+    align-items: center;
+}
+
+.sumarProducto, .restarProducto, .borrarProducto{
+    cursor: pointer;
+}
+
+
+.boton {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.boton.seleccionado {
+    background-color: green;
+    color: white;
 }

@@ -12,14 +12,16 @@ export const viewCarritoProductos = async (data, container) => {
         container.innerHTML += `
         <div class="tarjetaCarritoProducto">
             <img src="${productoInfo.data.imagen}">
-            <div>
+            <div class="infoProducto">
                 <h2>${productoInfo.data.nombreProducto}</h2>
                 <h3>$ ${productoInfo.data.precio}</h3>
                 <div class="cantidades">
-                    <span class="material-symbols-outlined">add</span>
-                    <p>${cantidad}</p>
-                    <span class="material-symbols-outlined">remove</span>
-                    <span class="material-symbols-outlined">delete</span>
+                    <div class="editCant">
+                        <span class="material-symbols-outlined sumarProducto" id="${productoId}">add</span>
+                        <p>${cantidad}</p>
+                        <span class="material-symbols-outlined restarProducto" id="${productoId}">remove</span>
+                    </div>
+                    <span class="material-symbols-outlined borrarProducto" id="${productoId}">delete</span>
                 </div>
             </div>
         </div>

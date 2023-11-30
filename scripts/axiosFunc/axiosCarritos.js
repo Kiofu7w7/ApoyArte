@@ -15,6 +15,14 @@ export const buscarCarrito = async (idUsu) => {
     }
 }
 
-export const crearCarrito = async (idUsu) => {
-    
-}
+//--------------------Editar carrito-------------------//
+
+export const editarCantidadProducto = async (idUsu, datos) => {
+    try {
+        const responseUsuario = await axios.get(url + "usuarios/" + idUsu)
+        const idCarroActual = responseUsuario.data.idCarrito
+        await axios.put(url + "carritos/" + idCarroActual, datos)
+    } catch (error) {
+        console.log(error);
+    }
+};
