@@ -9,6 +9,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     viewProductos(art.data, gal); // Asegúrate de que 'gal' esté definido antes de esta línea
 });
 
+document.addEventListener("click",({ target }) => {
+    if (target.classList.contains("tarjetaID")) {
+        try {  
+            localStorage.setItem('idFoto',target.id)
+        } catch (err) {
+            console.log(err);
+        }
+    }
+});
+
 document.addEventListener('DOMContentLoaded',async function(){
 
     document.getElementById('Todas').addEventListener('click', async () => {

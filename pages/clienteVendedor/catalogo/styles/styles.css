@@ -47,4 +47,8 @@ img{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     justify-content: space-between; 
+    text-decoration: none;
+}
+.tarjetas-container a{
+    text-decoration: none;
 }

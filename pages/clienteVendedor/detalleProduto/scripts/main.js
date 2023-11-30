@@ -1,16 +1,25 @@
-import{obtenerProductos} from '../../../../scripts/axiosFunc/axiosProducto.js';
-import{viewProductos} from '../../../../scripts/modules/detallegaleria.js';
+import{buscarProducto} from '../../../../scripts/axiosFunc/axiosProducto.js';
 
-let gal = document.getElementById('fotos');
-let ids = []
-document.addEventListener('DOMContentLoaded', async () => {
-    let art = await obtenerProductos();
-    viewProductos(art.data, gal);
-    for (let i = 0; i < art.data.lenght; i++) {
-        ids.push(art.data[i].id);
-        console.log(art.data[i].id)
-        console.log(ids)
-    }
-    console.log(art.data.id)
-    console.log(ids);
+let fotoID = localStorage.getItem('idFoto');
+let datos = await buscarProducto(fotoID);
+let cuadro = datos.data
+
+let image = document.getElementById('imagen');
+let detail = document.getElementById('detalle');
+let name = document.querySelector('#nombre');
+let price = document.querySelector('#precio');
+
+document.addEventListener('DOMContentLoaded',function(){
+    console.log(cuadro.imagen)
+    image.setAttribute('src', cuadro.imagen);
+    detail.innerText = cuadro.descripcion;
+    name.innerText = cuadro.nombreProducto;
+    price.innerText = cuadro.precio;
+})
+
+document.querySelector("#back").addEventListener("click", function () {
+    enviar();
 });
+function enviar() {
+window.location.href = "../../../../pages/clienteVendedor/catalogo/index.html";
+}

@@ -17,12 +17,18 @@ body {
 }
 
 .tarjetas-container{
+    background-color: aquamarine;
+    margin: 0px 10px 0px 10px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     justify-content: space-between; 
 }
 
 .tarjetaProducto img{
     max-width: 75%;
     height: 500px;
+    border: 20px groove rgb(1, 190, 1);
+}
+.tarjetaProducto h2, h3{
+    margin: 10px 0px !important;
 }
