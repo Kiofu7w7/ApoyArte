@@ -49,12 +49,20 @@
 .barrabusqueda{
     width: 500px;
 }
+
+#numeroCarrito{
+    border: none;
+    background-color: rgb(1, 190, 1);
+    border-radius: 50%;
+    color: aliceblue;
+}
+
 </style>
 
 <head>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/pages/clienteVendedor/landing/index.html" target="_myframe">
                 <img src="https://res.cloudinary.com/dtmapxnao/image/upload/v1701191319/logo_qryahc.png"
                     alt="Logo" width="30" height="24" class="d-inline-block align-text-top" style="object-fit: contain;">
                 <span class="nombre-logo">ApoyArte</span>
@@ -76,7 +84,7 @@
                         <a class="nav-link" href="../clienteVendedor/catalogo/index.html" target="_myframe">Galery</a>
                     </li>
                     <li class="nav-item items-navbar">
-                        <a class="nav-link" href="../clienteVendedor/blog/index.html" target="_myframe">Blog</a>
+                        <a class="nav-link" href="https://apoyarteblog.blogspot.com/2023/11/blog-post.html" target="_blank">Blog</a>
                     </li>
                     <li class="nav-item items-navbar">
                         <a class="nav-link" href="../clienteVendedor/contact/contacto.html" target="_myframe">Contact</a>
@@ -92,8 +100,8 @@
                             <a class="nav-link resaltado-a" href="../clienteVendedor/sign/index.html" target="_myframe">Sign up</a>
                         </li>
                         <li class="nav-item">
-                            <img src="https://e7.pngegg.com/pngimages/833/426/png-clipart-shopping-cart-shopping-cart.png"
-                                alt="Logo" width="40" height="40">
+                            <a href="../clienteVendedor/carrito/index.html" target="_myframe"><img src="https://e7.pngegg.com/pngimages/833/426/png-clipart-shopping-cart-shopping-cart.png"
+                                alt="Logo" width="40" height="40"><button id="numeroCarrito" style="display: none;">0</button></a>
                         </li>
                     </ul>
                 </div>
@@ -110,8 +118,5 @@
         </div>
     </nav>
 </head>
-<script>
-    // let news = document.getElementById(news);
-    
-    // news.addEventListener('click', )
-</script>
+<script src="./scripts/main.js" type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
