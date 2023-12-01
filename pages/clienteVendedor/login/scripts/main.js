@@ -1,10 +1,12 @@
 import { buscarUsuario } from "../../../../scripts/modules/inicioSesion.js";
 
+
+
 async function ejecutarInicioSesion(emailEnviar, contraEnviar) {
     try {
         if (emailEnviar !== "" && contraEnviar !== "") {
             const result = await buscarUsuario(emailEnviar, contraEnviar);
-            console.log(result.user)
+            console.log(result)
             const ususa = result.user
             if (result) {
                 localStorage.setItem('auth', result.success);
