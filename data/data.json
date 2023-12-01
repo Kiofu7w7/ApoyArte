@@ -72,18 +72,16 @@
       "email": "plaga500@hotmail.com",
       "contraseña": "patata1",
       "primerNombre": "Santiago",
-      "segundoNombre": "Buitrago",
       "primerApellido": "giraldo",
-      "segundoApellido": "",
       "numeroContacto": "3006700461",
       "direccion": "cra49 #44-47",
       "fechaNacimiento": "2003-02-02",
-      "tipoCuenta": "cliente",
+      "tipoCuenta": "administrador",
       "carroActual": true,
-      "idCarrito": "129431289"
+      "idCarrito": "67a530ca-bba7-49ba-a508-7d11d7fa5032"
     },
     {
-      "id": "2",
+      "id": "234",
       "nombreUsuario": "mendofeo",
       "email": "mendofeo@hotmail.com",
       "contraseña": "feo123",
@@ -95,8 +93,8 @@
       "direccion": "av 32 #42-41",
       "fechaNacimiento": "2002-4-17",
       "tipoCuenta": "vendedor",
-      "carroActual": false,
-      "idCarrito": ""
+      "carroActual": true,
+      "idCarrito": "123"
     },
     {
       "id": "3",
@@ -136,79 +134,104 @@
       "id": "129431289",
       "activo": "true",
       "productos": {
-        "1": {
-          "cantidad": 2,
-          "nombre": "cuadro"
-        },
-        "3": {
-          "cantidad": 2,
-          "nombre": "cuadro"
-        },
-        "64": {
-          "cantidad": 1,
-          "nombre": "cuadro"
-        },
         "1e44b323-4b2a-4580-b3c5-5e16fb31a97c": {
+          "cantidad": 2,
+          "nombre": "cuadro"
+        }
+      }
+    },
+    {
+      "id": "123",
+      "activo": "true",
+      "productos": {
+        "1e44b323-4b2a-4580-b3c5-5e16fb31a97c": {
+          "cantidad": 2,
+          "nombre": "cuadro"
+        },
+        "b158bd2c-daa6-442c-b473-ec083c9aa672": {
           "cantidad": 3,
           "nombre": "cuadro 2"
         }
       }
     },
     {
-      "id": "1",
+      "id": "1294312894",
       "activo": "true",
       "productos": {
-        "1": {
-          "cantidad": 3,
+        "1e44b323-4b2a-4580-b3c5-5e16fb31a97c": {
+          "cantidad": 2,
           "nombre": "cuadro"
         },
-        "64": {
-          "cantidad": 3,
+        "b158bd2c-daa6-442c-b473-ec083c9aa672": {
+          "cantidad": 2,
           "nombre": "cuadro"
+        },
+        "59c8e716-9fc7-48bc-8b2f-90786f4e1a7e": {
+          "cantidad": 1,
+          "nombre": "cuadro"
+        },
+        "159c8e716-9fc7-48bc-8b2f-90786f4e1a7e": {
+          "cantidad": 3,
+          "nombre": "cuadro 2"
         }
       }
     },
     {
-      "id": "2",
+      "id": "1294312895",
       "activo": "true",
       "productos": {
-        "12": {
-          "cantidad": 3,
+        "1e44b323-4b2a-4580-b3c5-5e16fb31a97c": {
+          "cantidad": 2,
           "nombre": "cuadro"
         },
-        "120": {
-          "cantidad": 3,
+        "b158bd2c-daa6-442c-b473-ec083c9aa672": {
+          "cantidad": 2,
           "nombre": "cuadro"
+        },
+        "59c8e716-9fc7-48bc-8b2f-90786f4e1a7e": {
+          "cantidad": 1,
+          "nombre": "cuadro"
+        },
+        "159c8e716-9fc7-48bc-8b2f-90786f4e1a7e": {
+          "cantidad": 3,
+          "nombre": "cuadro 2"
         }
       }
     },
     {
-      "id": "3",
+      "id": "1294312896",
       "activo": "true",
       "productos": {
-        "12": {
-          "cantidad": 3,
+        "1e44b323-4b2a-4580-b3c5-5e16fb31a97c": {
+          "cantidad": 2,
           "nombre": "cuadro"
         },
-        "120": {
-          "cantidad": 3,
+        "b158bd2c-daa6-442c-b473-ec083c9aa672": {
+          "cantidad": 2,
           "nombre": "cuadro"
+        },
+        "59c8e716-9fc7-48bc-8b2f-90786f4e1a7e": {
+          "cantidad": 1,
+          "nombre": "cuadro"
+        },
+        "159c8e716-9fc7-48bc-8b2f-90786f4e1a7e": {
+          "cantidad": 3,
+          "nombre": "cuadro 2"
         }
       }
     },
     {
-      "id": "4",
-      "activo": "true",
       "productos": {
-        "12": {
+        "89561c14-c5ea-4f8a-bfcd-11391e0ad134": {
           "cantidad": 3,
-          "nombre": "cuadro"
+          "nombre": "Habitacion contemporanea"
         },
-        "120": {
-          "cantidad": 3,
-          "nombre": "cuadro"
+        "59c8e716-9fc7-48bc-8b2f-90786f4e1a7e": {
+          "cantidad": 1,
+          "nombre": "Colorful Cat"
         }
-      }
+      },
+      "id": "67a530ca-bba7-49ba-a508-7d11d7fa5032"
     }
   ]
 }

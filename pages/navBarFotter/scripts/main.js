@@ -1,35 +1,69 @@
-import { buscarCarrito } from "../../../../scripts/axiosFunc/axiosCarritos.js"
-import { buscarUsuario } from "../../../scripts/axiosFunc/axiosUsuario.js"
+import { buscarCarrito } from "../../../../scripts/axiosFunc/axiosCarritos.js";
+import { buscarUsuario } from "../../../scripts/axiosFunc/axiosUsuario.js";
 
 let auth = localStorage.getItem('auth');
-let datosUser = localStorage.getItem('userData');
+let datosUser = JSON.parse(localStorage.getItem('userData'));
+const divLogSign = document.getElementById("noLog")
+const divUser = document.getElementById("divNom")
+const nombreUser = document.getElementById("nonbreUsuario")
+const btnCerrarSesion = document.getElementById("cerraSesion")
+const divAdmins =document.getElementById("soloAdmin")
 
-const idUsuario = datosUser
-const carrito = await buscarCarrito(idUsuario)
-let obtenePrecios;
-if (carrito && carrito.productos) {
-    obtenePrecios = Object.keys(carrito.productos);
+if (!auth || !datosUser) {
+    divLogSign.style.display = ""
+    divUser.style.display = "none"
+    divAdmins.style.display = "none"
+    console.log("no iniciado secion")
 } else {
-    obtenePrecios = []; // o cualquier valor por defecto que quieras asignar
+    const idUsuario = datosUser.id;
+    const carrito = await buscarCarrito(idUsuario);
+    let obtenerPrecios;
+
+    if (carrito && carrito.productos) {
+        obtenerPrecios = Object.keys(carrito.productos);
+    } else {
+        obtenerPrecios = [];
+    }
+
+    const numero = obtenerPrecios.length;
+    const numeroCarrito = document.getElementById("numeroCarrito");
+
+    if (numero !== 0) {
+        numeroCarrito.style.display = "";
+        numeroCarrito.innerText = numero;
+    } else {
+        numeroCarrito.style.display = "none";
+    }
+
+    try {
+        const datosUserData = await buscarUsuario(idUsuario); //cambiar
+        const prueba = datosUserData.data;
+        if (prueba.tipoCuenta === "cliente") {
+            console.log("cliente");
+            nombreUser.innerText = datosUser.nombreUsuario
+            divLogSign.style.display = "none"
+            divUser.style.display = ""
+            divAdmins.style.display = "none"
+        } else if (prueba.tipoCuenta === "administrador") {
+            console.log("admin");
+            nombreUser.innerText = datosUser.nombreUsuario
+            divLogSign.style.display = "none"
+            divUser.style.display = ""
+            divAdmins.style.display = "block"
+        } else if (prueba.tipoCuenta === "vendedor") {
+            console.log("vendedor");
+            nombreUser.innerText = datosUser.nombreUsuario
+            divLogSign.style.display = "none"
+            divUser.style.display = ""
+            divAdmins.style.display = "none"
+        }
+    } catch (error) {
+        // Handle the case where there is an error fetching user data
+        console.error("Error fetching user data:", error);
+    }
 }
-const numero = obtenePrecios.length
-const numeroCarrito = document.getElementById("numeroCarrito")
 
-if(numero!=0){
-    numeroCarrito.style.display = ""
-    numeroCarrito.innerText = numero
-}else{
-    numeroCarrito.style.display = "none"
-}
-
-
-const datosUserData = await buscarUsuario(datosUser)
-const prueba = datosUserData.data
-
-if (prueba.tipoCuenta == "cliente") {
-    console.log("cliente")
-}else if (prueba.tipoCuenta == "administrador"){
-    console.log("admin")
-}else if(prueba.tipoCuenta == "vendedor"){
-    console.log("venderdor")
-}
+btnCerrarSesion.addEventListener('click', function(){
+    localStorage.removeItem('userData');
+    localStorage.removeItem('auth')
+})
