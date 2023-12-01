@@ -6,10 +6,13 @@ let datosUser = JSON.parse(localStorage.getItem('userData'));
 const divLogSign = document.getElementById("noLog")
 const divUser = document.getElementById("divNom")
 const nombreUser = document.getElementById("nonbreUsuario")
+const btnCerrarSesion = document.getElementById("cerraSesion")
+const divAdmins =document.getElementById("soloAdmin")
 
 if (!auth || !datosUser) {
     divLogSign.style.display = ""
     divUser.style.display = "none"
+    divAdmins.style.display = "none"
     console.log("no iniciado secion")
 } else {
     const idUsuario = datosUser.id;
@@ -40,19 +43,27 @@ if (!auth || !datosUser) {
             nombreUser.innerText = datosUser.nombreUsuario
             divLogSign.style.display = "none"
             divUser.style.display = ""
+            divAdmins.style.display = "none"
         } else if (prueba.tipoCuenta === "administrador") {
             console.log("admin");
             nombreUser.innerText = datosUser.nombreUsuario
             divLogSign.style.display = "none"
             divUser.style.display = ""
+            divAdmins.style.display = "block"
         } else if (prueba.tipoCuenta === "vendedor") {
             console.log("vendedor");
             nombreUser.innerText = datosUser.nombreUsuario
             divLogSign.style.display = "none"
             divUser.style.display = ""
+            divAdmins.style.display = "none"
         }
     } catch (error) {
         // Handle the case where there is an error fetching user data
         console.error("Error fetching user data:", error);
     }
 }
+
+btnCerrarSesion.addEventListener('click', function(){
+    localStorage.removeItem('userData');
+    localStorage.removeItem('auth')
+})
