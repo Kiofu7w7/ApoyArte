@@ -9,7 +9,7 @@ async function ejecutarInicioSesion(emailEnviar, contraEnviar) {
             if (result) {
                 localStorage.setItem('auth', result.success);
                 localStorage.setItem('userData', JSON.stringify(ususa));
-                window.location.href = "../../clienteVendedor/landing/index.html";
+                //window.location.href = "../../clienteVendedor/landing/index.html";
             } else {
                 alert("Datos no coinciden con la base de datos");
             }

@@ -1,4 +1,4 @@
-const url = 'http://localhost:3000/usuarios';
+const url = 'vercer-jsonapoyarte.vercel.app/usuarios/';
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////// CANBIAR LA URL AL MOMENTO DE QUE EL JSON ESTE EN WEB ////////////////////////////
@@ -21,6 +21,7 @@ export const buscarUsuario = async (emailEnvio, contraseñaEnvio) => {
         const userFound = users.find(user => user.email === emailEnvio && user.contraseña === contraseñaEnvio);
 
         if (userFound) {
+            console.log(userFound)
             return { success: true, user: userFound };
         } else {
             return { success: false, message: "Usuario no encontrado" };
